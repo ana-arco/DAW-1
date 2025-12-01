@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- especifica el idioma de la página web, para facilitar las traducciones por ejemplo !-->
+<html lang="es">
+<head>
+    <!-- Esta etiqueta sirver para poder representar tildes del español -->
+    <meta charset="UTF-8">
+
+    <!-- La etiqueta viewport es obligatoria en la actualidad para mostrar el 100% de la pantalla del móvil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- descripción y resumen para los motores de búsqueda -->
+    <meta name="Contact" content="Cómo contactar con Ana Arco">
+    
+    <!-- Título visible en el navegador -->
+    <title>Contacto - Ana Arco</title>
+    
+    <!-- Enlace para conectar el css.  <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="style/style1.css">
+	
+	<!-- Enlace para favicon -->
+	<link rel="icon" href="images/favicon_ana.jpg" type="image/x-icon">
+	
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="trayectoria.html">¿De dónde vengo?</a></li>
+                <li><a href="enfoque.html">¿Hacia dónde voy?</a></li>
+                <li><a href="contacto.html">¿Hablamos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Hablemos</h1>
+            <p>Si mi visión resuena contigo o quieres iniciar una conversación, este es el lugar.</p>
+
+            <form action="#" method="POST">
+                
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre_usuario" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje_usuario" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <div class="social-links">
+            <!-- target="_blank" - Instrucción para 'Abrir en una Nueva Pestaña' -->
+            <!-- Protección contra phishing -->
+            <!-- rel="noopener noreferrer" instrucción para 'Abrir el enlace en una nueva pestaña, pero abre enlace 
+            de forma segura, cortando cualquier lazo con mi página, y de forma privada, sin decirle a dónde vas desde aquí." -->
+            
+            <a href="https://github.com/Anarkz7" target="_blank" rel="noopener noreferrer">
+				<img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="Logo GitHub" width="40">
+			</a>
+			<a href="https://www.linkedin.com/in/ana-arco-izquierdo-b6732329b/" target="_blank" rel="noopener noreferrer">
+				<img src="images/logoLinkedin.png" alt="Logo Linkedin" width="40>">
+			</a>
+        </div>
+        <!-- El &copy; presenta en la página web el símbolo de copiright -->
+        <p>&copy; 2025 - Ana Arco Izquierdo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

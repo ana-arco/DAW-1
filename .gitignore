@@ -1,0 +1,11 @@
+# NetBeans y Java basura
+/nbproject/private/
+/build/
+/dist/
+/nbdist/
+.nb-gradle/
+*.class
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store

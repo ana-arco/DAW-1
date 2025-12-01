@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Manual de incidencias" content="Panel de control y monitoreo del Nordic Optical Telescope. Acceso a datos científicos y estado del sistema.">
+    
+    <title>Dashboard NOT | Nordic Optical Telescope</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="contenidos/img/notlogo2b.png" type="image/x-icon">
+</head>
+
+<body class="container">
+
+    <header id="inicio">
+        
+        <img src="https://www.not.iac.es/general/photos/telescope/views/radko2013_wide.PNG" 
+             alt="Panorámica del Telescopio ubicado en el Roque de Los Muchachos, en La Palma." 
+             loading="eager"
+             style="width: 100vw; height: auto; display: block; margin-left: -8px; margin-top: -8px; max-width: none;">
+             <!--se pone el -8 en los márgenes porque actualmente los navegadores (edge, chrome...) ponen la etiqueta body un margen automático de 8px.-->
+        
+        <hgroup><center>
+            <h1>NORDIC OPTICAL TELESCOPE</h1>
+            <h2>NOT Dashboard | Sistema de Monitoreo Científico</h2>
+            </center>
+        </hgroup>
+
+        <nav aria-label="Menú Principal">
+            <hr>
+            <ul>
+                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <section id="docs">
+            <header>
+                <h2>Protocolos de Emergencia</h2>
+                <form action="#" method="get">
+                    <label for="busqueda-manual">Buscar en el manual:</label>
+                    <input type="search" id="busqueda-manual" name="question" placeholder="Ej: Error 404...">
+                    <button  type="button">🔍</button>
+                </form>
+            </header>
+
+            <article>
+                <h3>Procedimiento de Reinicio</h3>
+                <p>Si el sistema falla, siga estos pasos en la terminal:</p>
+                
+                <pre><code>
+                    <span style="color: blue; ">root@not-server</span>:<span style="color: green;">~$ sudo systemctl restart telescope-control</span>
+                    [sudo] password for admin: *********
+                    <samp>System restarting... OK</samp>
+                </code></pre>
+                <!-- la etiqueta pre hace que el texto permanezca igual, con los mismos saltos de línea y espaciados que en el HTML, cacharrea y verás.-->
+                
+                <p>
+                    Para abortar, presione <kbd>Ctrl</kbd> + <kbd>C</kbd> inmediatamente. 
+                    El valor de retorno debería ser <var>0</var> (éxito).
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="reporte">
+            <header>
+                <h2>Generar Reporte de Incidencia</h2>
+                <p>Complete el formulario para solicitar asistencia técnica.</p>
+            </header>
+
+            <form action="servidor-falso.php" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>1. Identificación del Operador</legend>
+                    
+                    <p>
+                        <label for="email">Correo Institucional:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="usuario@not.iac.es">
+                    </p>
+
+                    <p>
+                        <label for="pass">Código de acceso:</label><br>
+                        <input type="password" id="pass" name="password" required maxlength="8">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Datos del Incidente</legend>
+
+                    <p>
+                        <label for="componente">Componente Afectado:</label><br>
+                        <input list="lista-componentes" id="componente" name="componente" placeholder="Escriba o seleccione...">
+                        
+                        <datalist id="lista-componentes">
+                            <option value="Espejo Primario (M1)">
+                            <option value="Espejo Secundario (M2)">
+                            <option value="Sensor CCD">
+                            <option value="Motor de Ascensión Recta">
+                            <option value="Sistema de Refrigeración">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="prioridad">Tipo de Fallo:</label><br>
+                        <select id="prioridad" name="prioridad">
+                            <optgroup label="Hardware">
+                                <option value="fisico_rotura">Rotura física</option>
+                                <option value="fisico_calor">Sobrecalentamiento</option>
+                            </optgroup>
+                            <optgroup label="Software">
+                                <option value="soft_bug">Bug / Error de código</option>
+                                <option value="soft_conn">Fallo de Conexión</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="fecha">Hora del incidente:</label><br>
+                        <input type="datetime-local" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="nivel-urgencia">Nivel de Urgencia (1-10):</label><br>
+                        <span style="font-size: 0.8em;">Bajo</span>
+                        <input type="range" id="nivel-urgencia" name="urgencia" min="1" max="10" step="1" value="5">
+                        <span style="font-size: 0.8em;">Crítico</span>
+                    </p>
+                    
+                    <p>
+                        <label for="color-error">Color del led de error (si aplica):</label>
+                        <input type="color" id="color-error" name="color_led" value="#ff0000">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="descripcion">Descripción detallada:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="50" placeholder="Describa el ruido o comportamiento anómalo..."></textarea>
+                </p>
+
+                
+
+                <fieldset>
+                    <legend>3. Protocolos de Respuesta</legend>
+
+                    <p>
+                        <strong>¿Requiere asistencia presencial? (Selección Única):</strong>
+                        <br>
+                        <br>
+                        
+                        <input type="radio" id="asist-remota" name="tipo_asistencia" value="remota" checked>
+                        <label for="asist-remota">No, soporte remoto es suficiente</label><br>
+                        
+                        <input type="radio" id="asist-fisica" name="tipo_asistencia" value="fisica">
+                        <label for="asist-fisica">Sí, enviar técnico al sitio</label><br>
+                        
+                        <input type="radio" id="asist-urgente" name="tipo_asistencia" value="emergencia">
+                        <label for="asist-urgente">¡EMERGENCIA! (Riesgo de equipo)</label>
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <strong>Notificar vía (Multiselección):</strong>
+                        <br>
+                        <br>
+                        
+                        <input type="checkbox" id="notify-email" name="notificaciones" value="email" checked>
+                        <label for="notify-email">Correo Electrónico</label>
+                        
+                        <input type="checkbox" id="notify-sms" name="notificaciones" value="sms">
+                        <label for="notify-sms">SMS al móvil de guardia</label>
+                        
+                        <input type="checkbox" id="notify-slack" name="notificaciones" value="slack">
+                        <label for="notify-slack">Canal Slack #Ops</label>
+                        
+                        <input type="checkbox" id="notify-sirena" name="notificaciones" value="sirena">
+                        <label for="notify-sirena">Activar Sirena de Cúpula</label>
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <label for="departamentos">Copiar reporte a departamentos (Mantén Ctrl para seleccionar varios):</label>
+                        <br>
+                        <br>
+                        
+                        <select id="departamentos" name="dept_copy[]" size="3" multiple>
+                            <option value="astrof">Astrofísica</option>
+                            <option value="manten">Mantenimiento</option>
+                            <option value="admin">Administración</option>
+                            <option value="it">Sistemas (IT)</option>
+                            <option value="rrhh">Recursos Humanos</option>
+                            <option value="direct">Dirección General</option>
+                        </select>
+                        <br>
+                        <br>
+                        <small><em>*Usa Ctrl+Click (Windows) o Cmd+Click (Mac) para seleccionar varios.</em></small>
+                    </p>
+
+                </fieldset>
+                <br>
+                <p>
+                    <input type="checkbox" id="legal" name="legal" required>
+                    <label for="legal">Confirmo que los datos son reales (Declaración Jurada).</label>
+                </p>
+                <br>
+
+                <button type="submit">Enviar Reporte</button>
+                <button type="reset">Borrar formulario</button>
+                <br>
+                <br>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    
+    <footer>
+        <br>
+        <hr>
+        <div class="footer-container">
+            <h3>Nordic Optical Telescope</h3>
+            <p></p>            
+        </div>
+        <div class="footer-nav">
+            <table  border="1" cellpadding="2" cellspacing="10" width="100%" align="center">
+                <tr>
+                    <td>
+                        <nav aria-label="Menú Principal">
+                            <ul>
+                                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td> 
+                        <div class="footer-columna2">
+                            <ul>
+                                <li><a href="https://www.not.iac.es/">Página Oficial del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/photos/">Galería del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/contacts/">Contactos Actuales del NOT</a></li>
+                            </ul> 
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-footer">                          
+                            <ul>
+                                <address>
+                                    <strong>Nordic Optical Telescope</strong><br>
+                                    Observatorio del Roque de los Muchachos<br>
+                                    La Palma, Islas Canarias<br>
+                                    Email: <a href="mailto:ejemplo-staff@not.iac.es">staff@not.iac.es</a>
+                                </address>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        <br>
+        <small><center>
+            &copy; 2025 Proyecto Educativo. Desarrollado por Ana Arco Izquierdo.
+        </center></small>
+        <br>
+    </footer>
+</body>
+</html>

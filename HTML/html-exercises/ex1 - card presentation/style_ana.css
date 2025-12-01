@@ -1,0 +1,52 @@
+
+/* Bordes    border-style[ ] 
+* Sombras    [ ] 
+* Padding    [ ]
+* Márgenes   [ ] 
+* text-align [ ] 
+* 
+*/
+
+#nombre {
+	background-color: #f7cac9;
+	color: #f7786b;
+	
+	margin: 25px;
+	padding: 17px;
+	text-align: center;
+	
+	border-radius: 0px;
+	border-style: outset;
+    border-width: thick;
+	border-color: #c94c4c;
+	
+	text-shadow: 12px 10px 2px white;
+	
+}
+
+#profesion {
+	text-shadow: 0 0 4px #92a8d1;
+}
+
+.profesion {
+	color: #034f84;
+	font-family: Roboto;
+	
+	
+}
+.contacto {
+	color: #d64161;
+	text-align: right;
+	background-color: #deeaee;
+}
+
+p {
+	font-size: 18px;
+	
+}
+h2 {
+	font-size: 20px;
+	font-family: arial;
+	border-bottom: 6px solid #c1946a;
+	
+}

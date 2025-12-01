@@ -1,0 +1,155 @@
+/* =========================================
+   1. CONFIGURACIÓN DEL ENTORNO (FONDO)
+   ========================================= */
+/* Usamos 'html' para el fondo gris de la ventana */
+html {
+    background-color: #eef2f5; /* Gris azulado muy suave y moderno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    padding-top: 40px; /* Espacio arriba */
+    padding-bottom: 40px; /* Espacio abajo */
+}
+
+/* =========================================
+   2. EL PAPEL (BODY COMO CONTENEDOR)
+   ========================================= */
+/* Convertimos el body en la "hoja de papel" */
+body {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 75%; /* Ancho máximo estilo A4 */
+    margin: 0 auto;   /* Centrado de seguridad */
+    padding: 3rem;    /* Márgenes internos amplios (aprox 48px) */
+    
+    /* La magia del diseño: Sombra suave y borde */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    border-radius: 8px;
+    border-top: 6px solid #ff6b6b; /* Un toque de color coral moderno arriba */
+    
+    color: #444; /* Gris oscuro para texto (mejor que negro puro) */
+    line-height: 1.6; /* Espaciado entre líneas para leer mejor */
+}
+
+/* =========================================
+   3. TIPOGRAFÍA Y JERARQUÍA
+   ========================================= */
+
+/* Título Principal */
+h1 {
+    font-size: 2.2rem;
+    color: #2d3436;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #dfe6e9; /* Línea discontinua sutil */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Títulos de Sección (Datos, Educación...) */
+h2 {
+    background-color: #2d3436; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    display: inline-block; /* Que el fondo ocupe solo lo necesario */
+    box-shadow: 2px 2px 0px #ff6b6b; /* Sombra sólida color coral */
+}
+
+/* Subtítulos (Idiomas) */
+h3 {
+    color: #ff6b6b; /* Color coral */
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    border-left: 4px solid #ff6b6b;
+    padding-left: 10px;
+}
+
+/* =========================================
+   4. DETALLES DE CONTENIDO
+   ========================================= */
+
+/* Párrafos generales */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Negritas (Etiquetas como Nombre, Dirección...) */
+strong {
+    color: #2d3436;
+    font-weight: 700;
+}
+
+/* Cursivas (Nombres de escuelas) */
+em {
+    color: #636e72;
+    font-style: normal; /* Quitamos la inclinación clásica */
+    font-weight: 500;
+    text-decoration: underline; /* Subrayado sutil */
+    text-decoration-color: #ff6b6b;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 3rem 0;
+}
+
+/* Pie de página (Address) */
+address {
+    font-style: normal;
+    font-size: 0.9rem;
+    text-align: right;
+    color: #636e72;
+    border-right: 3px solid #dfe6e9;
+    padding-right: 15px;
+}
+
+/* El párrafo final "libre" */
+.libre {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #b2bec3;
+    margin-top: 3rem;
+}
+
+/* Cite (Citas en el pie) */
+cite {
+    font-weight: bold;
+    color: #b2bec3;
+}
+
+/* =========================================
+   5. RESPONSIVE (MÓVIL)
+   ========================================= */
+@media (max-width: 600px) {
+    html {
+        padding: 0; /* Quitamos padding del html en móvil */
+        background-color: #fff;
+    }
+    
+    body {
+        box-shadow: none; /* Quitamos sombra */
+        border-radius: 0;
+        border-top: none;
+        padding: 1.5rem; /* Menos margen interno */
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        text-align: left; /* Alineamos a izquierda en móvil */
+    }
+    
+    h2 {
+        display: block; /* Que ocupe todo el ancho en móvil */
+        width: 100%;
+    }
+}

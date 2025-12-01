@@ -1,0 +1,131 @@
+css nuevo
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0;
+    /* Fondo gris azulado muy claro para dar sensación tecnológica */
+    background-color: #eceff1; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #37474f; /* Gris oscuro (Blue grey) para el texto */
+}
+
+/* --- REQUISITO 1: ENCABEZADO (Selector por ID) --- */
+#cabecera {
+    /* AZUL PREDOMINANTE: Un azul marino profundo */
+    background-color: #1565c0; 
+    color: white;
+    
+    /* PADDING 1: Muy amplio (60px) para dar importancia */
+    padding: 60px 20px; 
+    
+    /* BORDE TIPO 1: Sólido y Dorado (El color que queda bien) */
+    border-bottom: 6px solid #ffb300; 
+    
+    /* MARGEN 1: Separación grande del contenido */
+    margin-bottom: 50px; 
+    
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(21, 101, 192, 0.3); /* Sombra azulada */
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    color: #ffb300; /* Subtítulo en dorado para resaltar */
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* --- REQUISITO 2: SECCIÓN "SOBRE MÍ" (Selector por Clase) --- */
+.sobre-mi {
+    /* Fondo Blanco para máxima legibilidad */
+    background-color: #ffffff; 
+    
+    /* Ancho controlado */
+    max-width: 600px; 
+    
+    /* PADDING 2: Medio (30px), diferente al header */
+    padding: 30px; 
+    
+    /* MARGEN 2: Centrado automático */
+    margin: 0 auto 30px auto; 
+    
+    /* Borde izquierdo decorativo (Sigue siendo sólido, pero parcial) */
+    border-left: 10px solid #1565c0; 
+    
+    /* Border Radius */
+    border-radius: 0 15px 15px 0; /* Curva solo a la derecha */
+    
+    /* Sombra suave */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sobre-mi h3 {
+    color: #0d47a1; /* Azul muy oscuro */
+    margin-top: 0;
+    border-bottom: 1px solid #eceff1;
+    padding-bottom: 15px;
+}
+
+/* --- REQUISITO 3: SECCIÓN "HOBBIES" (Selector por Clase) --- */
+.hobbies {
+    /* Fondo Azul muy claro (Blue 50) */
+    background-color: #e3f2fd; 
+    
+    max-width: 600px;
+    
+    /* PADDING 3: Compacto (20px) */
+    padding: 20px; 
+    
+    /* MARGEN 3: Diferente al de arriba */
+    margin: 20px auto 60px auto; 
+    
+    /* BORDE TIPO 2: DOBLE (Requisito de "2 tipos de bordes") */
+    /* Usamos 'double' en lugar de 'solid' o 'dashed' para variar */
+    border: 4px double #1565c0; 
+    
+    border-radius: 10px;
+}
+
+.hobbies h3 {
+    color: #1565c0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px; /* Pequeña etiqueta para el título */
+    display: inline-block; /* Para que el fondo se ajuste al texto */
+    
+    /* Truco para centrar el bloque inline dentro del padre */
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -35px; /* Subimos el título para que "muerda" el borde */
+    border: 1px solid #1565c0;
+}
+
+/* Estilo de la lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: white;
+    color: #455a64;
+    
+    /* Separación y estilo */
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ffb300; /* Detalle dorado abajo */
+    
+    font-weight: 500;
+}

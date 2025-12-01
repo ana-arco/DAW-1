@@ -1,0 +1,126 @@
+css complementario
+
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0;
+    /* Fondo verde menta muy suave para contrastar con el rosa */
+    background-color: #e0f2f1; 
+    font-family: 'Verdana', sans-serif;
+    color: #2d3436;
+}
+
+/* --- REQUISITO 1: ENCABEZADO (Selector por ID) --- */
+/* Encabezado selector por ID */
+#cabecera {
+    /* Color de fondo (Rosa fuerte) y texto (Blanco) */
+    background-color: #e91e63; 
+    color: #ffffff;
+    
+    /* Padding mínimo 20px */
+    padding: 60px 20px; 
+    
+    /* Borde visible (TIPO 1: SÓLIDO y grueso) */
+    /* Usamos el verde oscuro complementario para el borde */
+    border-bottom: 8px solid #00695c; 
+    
+    /* Margin-bottom para separar */
+    margin-bottom: 50px; 
+    
+    text-align: center;
+    /* Sombra para darle profundidad */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitulo {
+    font-weight: normal;
+    font-style: italic;
+    /* Un rosa más claro para el subtítulo */
+    color: #f8bbd0; 
+    margin-top: 10px;
+}
+
+/* --- REQUISITO 2: SECCIÓN "SOBRE MÍ" (Selector por Clase) --- */
+/* Sección Sobre mí selector por clase */
+.sobre-mi {
+    /* Color de fondo para visualizar la caja (Blanco para limpieza) */
+    background-color: #ffffff; 
+    
+    /* Width o max-width entre 400-600px */
+    max-width: 500px; 
+    
+    /* Padding para separar texto */
+    padding: 40px; 
+    
+    /* Márgenes para centrar (Márgen tipo A) */
+    margin: 0 auto 40px auto; 
+    
+    /* Borde o border-radius */
+    border: 2px solid #e91e63; /* Borde rosa fino */
+    border-radius: 20px 0 20px 0; /* Bordes redondeados asimétricos (moderno) */
+    
+    /* Sombra verde suave */
+    box-shadow: 10px 10px 0px #b2dfdb; 
+}
+
+.sobre-mi h3 {
+    color: #e91e63; /* Título en rosa */
+    border-bottom: 2px solid #b2dfdb;
+    padding-bottom: 10px;
+}
+
+/* --- REQUISITO 3: SECCIÓN "HOBBIES" (Selector por Clase) --- */
+/* Sección Hobbies selector por clase */
+.hobbies {
+    /* Color de fondo DIFERENTE al anterior */
+    /* Usamos el rosa pálido de fondo, invirtiendo la paleta */
+    background-color: #fce4ec; 
+    
+    max-width: 500px; /* Mantenemos la alineación */
+    
+    /* Padding y márgenes distintos */
+    padding: 30px; /* Padding distinto al de arriba (40px vs 30px) */
+    margin: 0 auto 60px auto; /* Margen inferior distinto */
+    
+    /* 2 tipos de bordes (TIPO 2: DASHED/Punteado) */
+    border: 3px dashed #00695c; /* Borde verde punteado */
+    border-radius: 20px;
+}
+
+.hobbies h3 {
+    color: #00695c; /* Título en verde oscuro */
+    text-align: center;
+}
+
+/* Modificar el estilo de la lista */
+ul {
+    list-style: none; /* Quitamos los puntos por defecto */
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    color: #004d40; /* Texto verde oscuro */
+    
+    /* Separación entre elementos */
+    margin-bottom: 15px; 
+    
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 5px solid #e91e63; /* Detalle rosa a la izquierda */
+    
+    /* Transición suave */
+    transition: transform 0.2s; 
+}
+
+li:hover {
+    transform: scale(1.02); /* Efecto zoom sutil */
+    background-color: #e0f2f1;
+}

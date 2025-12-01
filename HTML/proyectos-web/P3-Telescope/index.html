@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Panel de control y monitoreo del Nordic Optical Telescope. Acceso a datos científicos y estado del sistema.">
+    <meta name="author" content="Tu Nombre">
+    
+    <title>Dashboard NOT | Nordic Optical Telescope</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://www.not.iac.es/general/photos/logos/notlogo2b.png" type="image/x-icon">
+</head>
+
+<body> 
+
+    <header id="inicio">
+        
+        <img src="https://www.not.iac.es/general/photos/telescope/views/radko2013_wide.PNG" 
+             alt="Panorámica de la Sala de Control del Nordic Optical Telescope con monitores de telemetría" 
+             loading="eager"
+             style="width: 100%; height: auto; display: block; margin-left: -8px; margin-top: -8px; max-width: none;">
+             <!--se pone el -8 en los márgenes porque actualmente los navegadores (edge, chrome...) ponen la etiqueta body un margen automático de 8px.-->
+        
+        <hgroup><center>
+            <h1>NORDIC OPTICAL TELESCOPE</h1>
+            <h2>NOT Dashboard | Sistema de Monitoreo Científico</h2>
+            </center>
+        </hgroup>
+
+        <nav aria-label="Menú Principal">
+            <hr>
+            <ul>
+                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        
+        <section>
+            <h3>Estado del Sistema: Sala de control dentro del telescopio </h3>
+            <p>El NOT fue inaugurado en 1989 y se encuentra en el Observatorio del Roque de los Muchachos<sup>1</sup>.</p>
+            <img src="https://www.not.iac.es/general/photos/telescope/telescope/controlroom_wide.jpg" 
+                alt="Panorámica de la Sala de Control del Nordic Optical Telescope con monitores de telemetría" 
+                style="width: 100vw; height: auto; display: block; margin-left: -8px; margin-top: -8px; max-width: none;">
+                <br>
+                <footer>
+                    <small><sup>1</sup> Situado en la isla de La Palma, Canarias.</small>
+                </footer>
+        </section>
+
+        
+
+        <section id="live-status">
+            <hr>
+            <header>
+                <h2>Telemetría del Observatorio</h2>
+                <p>Última sincronización: <time datetime="2023-11-20T23:00">20 Nov 2023, 23:00 UTC</time></p>
+            </header>            
+
+            <article class="card-sensor">
+                <h3>Sensores Ambientales</h3>
+                
+                <label for="temp-sensor">Temperatura Espejo Primario:</label>
+                <meter id="temp-sensor" min="-10" max="40" low="0" high="25" optimum="12" value="12.5">
+                    12.5°C
+                </meter> 
+                <span><data value="12.5">12.5</data> °C</span>
+                <br>
+
+                <label for="hum-sensor">Humedad Relativa:</label>
+                <meter id="hum-sensor" min="0" max="100" high="85" optimum="40" value="62">
+                    62%
+                </meter>
+                <span><data value="62">62</data>%</span>
+            </article>
+            <br>
+            <br>
+
+            <article class="card-operations">
+                <h3>Operaciones en curso</h3>
+
+                <label for="dome-status">Apertura de Cúpula:</label>
+                <progress id="dome-status" max="100" value="75">75%</progress>
+                <span>Abriendo... 75%</span>
+                <br>
+
+                <label for="data-link">Descarga de Paquetes Satelitales:</label>
+                <progress id="data-link" max="100" value="30">30%</progress>
+                <span>Transfiriendo datos...</span>
+            </article>
+
+            <br>
+            <br>
+            
+            <article class="card-info">
+                <details>
+                    <summary><strong> Ver especificaciones de sensores</strong></summary>
+                    <p>Los sensores operan bajo normativa ISO-9001. Calibración realizada por:</p>
+                        <!-- La etiqueta <dl> significa Description List (Lista de Descripción). 
+                            <dl> (El envoltorio): Dice "Aquí empieza una lista de pares término-definición".
+                            <dt> (Description Term): Es la Etiqueta o el Título (ej: "Frecuencia de muestreo").
+                            <dd> (Description Details): Es el Dato o el Valor (ej: "Cada 5 segundos").-->
+                    
+                    <dl>
+                        <dt><abbr title="Nordic Optical Telescope">NOT</abbr> Engineer Team</dt>
+                            <dd>Responsable: Dr. J. Smith</dd>    
+                        <dt>Frecuencia de muestreo</dt>
+                            <dd>Cada 5 segundos (<mark>Alta prioridad</mark>)</dd>
+                    </dl>
+                </details>
+            </article>
+
+        </section>
+        
+        <br>
+        <br>
+        <hr>
+
+    <section id="telescope-schematic">
+            <header>
+                <h2>Diagnóstico de Componentes</h2>
+                <p>Interactúa con el diagrama: <strong>Haz clic en las partes del telescopio para ver su estado. </strong><ins><mark>PRUÉBALO PORQUE SÍ FUNCIONA</mark></ins></p>
+            </header>
+            <!-- PARA PODER INTERACTUAR CON UNA IMÁGEN en html puedes usar la eiqueta USEMAP para enlazar 
+             las especificaciones en determinadas partes de la foto que el html lee en coordenadas. 
+             Este sería un ejemplo de cómo se utilizaría. No he encontrado ningún plano del NOT, de hecho 
+             el año pasado en las prácticas me pidieron encargarme de digitalizar los planos 
+             (pliegos grandísimos de papel) para poder consultarlos en el ordenador de una forma mucho más rápida y fácil.
+             Creo que esta etiqueta es ideal para ese trabajo justo.
+
+            Un esquema simple
+                <img src="telescopio.png" 
+                    alt="Esquema del Telescopio" 
+                    usemap="#telescope-schematic"> 
+
+                <map name="telescope-schematic">
+                
+                <area shape="circle" coords="100,100,50" href="espejo.html" alt="Espejo">
+                
+                <area shape="rect" coords="200,200,300,300" href="sensores.html" alt="Sensores">
+                </map>
+            
+            Aquí funciona -->
+            
+            <figure>
+                <img src="https://exosfera.net/images/focos.png" 
+                     alt="Esquema técnico del Nordic Optical Telescope: Espejo, Montura y Sensores"
+                     usemap="#not-schematic"
+                     width="auto" height="400">                     
+                <map name="not-schematic">
+                    
+                    <area shape="rect" coords="50,300,250,380" 
+                          href="manual.html#hardware" 
+                          alt="Montura Altazimutal" 
+                          title="Revisar estado de la Montura">
+                    
+                    <area shape="circle" coords="300,150,60" 
+                          href="manual.html#optica" 
+                          alt="Espejo Primario M1" 
+                          title="Ver calibración del Espejo">
+                    
+                    <area shape="poly" coords="400,300, 450,350, 350,350" 
+                          href="bitacora.html" 
+                          alt="Unidad de Procesamiento (CPU)" 
+                          title="Ir a los Logs del Sistema">
+                </map>
+
+                <figcaption>
+                    Planos del telescopio.
+                    
+                </figcaption>
+            </figure>
+            
+            <aside>
+                <h3>Nota de Mantenimiento</h3>
+                <p>Las zonas activas requieren calibración manual. Si el diagrama no responde, contacte con <a href="mailto:ejemplo-admin@not.iac.es">Soporte</a>. 
+                    <i>Envia un correo directamente desde este enlace.</i></p>
+                <img src="https://www.not.iac.es/general/photos/telescope/telescope/lowres/dscf0069_800.jpg"
+                    alt="Ingenieros del telescopio (Carlos Pérez)"
+                    width="auto" height="300">
+                    <figcaption>
+                    Ingenieros del telescopio (Carlos Pérez)
+                    <p>Configuración actual: <var>f/11</var>. <small><sup>2</sup></small> </p>
+                    <p><small><sup>2</sup> En física, f/11" se refiere a la longitud focal (focal length),
+                     una variable en la fórmula que determina la apertura del diafragma.</small></p>
+                            <!-- la etiqueta var le dice al navegador que eso no es una palabra normal, 
+                            es una variable matemática (como x, y, z) o una variable de programación
+                            En óptica y fotografía: La "f" en "f/11" se refiere a la longitud focal (focal length).
+                                En física, la longitud focal es una variable en la fórmula que determina la apertura del diafragma.-->
+                </figcaption>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <br>
+    <hr>
+
+        <section id="multimedia-feed">
+            <header>
+                <h2>Visualización de Campo</h2>
+            </header>
+
+            <figure>
+                
+                <video width="100%" height="auto" width="100%"  
+                    controls muted autoplay loop 
+                    playsinline loading="lazy" tabindex='0'>
+                    
+                        <!-- tabindex='0' permite que dentro de los controles, el espacio sirva para pausar el video. 
+                        style="width: 100vw; height: auto; display: block; margin-left: -18px; margin-top: -8px; max-width: none;"
+                        La etiqueta width: 100vw hace que las imágenes se vean el 100% de la pantalla sin el borde automático que el navegador le asigna al body de 8px-->
+                
+                    <source src="https://www.not.iac.es/general/photos/telescope/views/NOT_Landscape.mp4" type="video/webm">
+                    
+                    <track src="assets/subs/descripcion-es.vtt" kind="subtitles" srclang="es" label="Español">
+                    <!-- La etiqueta <track> sirve para añadir pistas de texto sincronizadas (subtítulos, descripciones o capítulos) a tus elementos de <video> o <audio>.-->
+                    
+                    <p>Tu navegador no soporta vídeo HTML5. <a href="https://www.not.iac.es/general/photos/telescope/views/NOT_portrait_timelapse.mp4">Descargar vídeo</a>.</p>
+                </video>
+                
+                <figcaption>
+                    <strong>Fig. 1:</strong> Timelapse de la cámara exterior (Cúpula Abierta).
+                    <small>Presiona <kbd>Espacio</kbd> para pausar.</small>
+                </figcaption>
+            </figure>
+
+            <br>
+
+            <figure>
+                <figcaption>Canal de Audio: Sala de Control</figcaption>
+                <br>
+                <audio controls>
+                    <source src="contenidos/audio/radio-conexion.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </figure>
+
+            <figure> <center>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5123.640432516417!2d-17.887720687781595!3d28.75722247830364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6bf07379ef80bb%3A0x7fa3c5902cf1e7c4!2sNordic%20Optical%20Telescope!5e1!3m2!1ses!2ses!4v1763925847673!5m2!1ses!2ses"
+                    width="90%" height="600" 
+                    style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <figcaption><strong>Fig. 2:</strong> Ubicación en tiempo real (Roque de los Muchachos).</figcaption>
+            </figure>
+
+            <article><center>
+                <h3>Informe Anual (PDF)</h3>
+
+                <!--La etiqueta <object> es un contenedor genérico diseñado para incrustar casi cualquier tipo de archivo externo 
+                    que el navegador no pueda procesar como HTML puro. En tu caso, se está usando como un Visor de PDF integrado.-->
+                <object data="contenidos/docs/Informe CCI 2020 - 25-06-2021.pdf" type="application/pdf" width="60%" height="600" center>
+                    <p>Tu navegador no visualiza PDFs. <a href="contenidos/docs/Informe CCI 2020 - 25-06-2021.pdf">Descárgalo aquí</a>.</p>
+                    <!-- Si el navegador no visualiza el pdf sale la línea de párrafo y permite descargarlo-->
+                </object>
+                <p><a href="contenidos/docs/Informe CCI 2020 - 25-06-2021.pdf">Descárgalo aquí</a>.</p>
+                <!-- Repito la línea fuera para que aparezca la opción de descarga fuera.-->
+            </center>
+            </article>
+
+        </section>
+
+    <footer>
+        <br>
+        <hr>
+        <div class="footer-container">
+            <h3>Nordic Optical Telescope</h3>
+            <p></p>            
+        </div>
+        <div class="footer-nav">
+            <table  border="1" cellpadding="2" cellspacing="10" width="100%" align="center">
+                <tr>
+                    <td>
+                        <nav aria-label="Menú Principal">
+                            <ul>
+                                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td> 
+                        <div class="footer-columna2">
+                            <ul>
+                                <li><a href="https://www.not.iac.es/">Página Oficial del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/photos/">Galería del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/contacts/">Contactos Actuales del NOT</a></li>
+                            </ul> 
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-footer">                          
+                            <ul>
+                                <address>
+                                    <strong>Nordic Optical Telescope</strong><br>
+                                    Observatorio del Roque de los Muchachos<br>
+                                    La Palma, Islas Canarias<br>
+                                    Email: <a href="mailto:ejemplo-staff@not.iac.es">staff@not.iac.es</a>
+                                </address>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        <br>
+        <small><center>
+            &copy; 2025 Proyecto Educativo. Desarrollado por Ana Arco Izquierdo.
+        </center></small>
+        <br>
+    </footer>
+
+</body>
+</html>

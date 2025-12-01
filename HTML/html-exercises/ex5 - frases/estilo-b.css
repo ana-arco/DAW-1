@@ -1,0 +1,69 @@
+estilo-b.css
+
+
+
+@charset "utf-8";
+
+/* REGLAS GENERALES */
+body {
+    /* Cambio clave: Fondo oscuro para alto contraste */
+    background-color: #1a1a1a; /* Un gris casi negro, más suave para la vista que el #000 puro */
+    font-family: Arial, sans-serif; /* [cite: 29] */
+}
+
+h1 {
+    /* Para que se lea en fondo oscuro, el título debe ser casi blanco */
+    color: #f0f0f0; 
+    font-size: 2em; /* [cite: 31] */
+    font-variant: small-caps; /* [cite: 32] Requisito obligatorio: Versalitas */
+    text-align: center;
+    border-bottom: 1px solid #444; /* Un detalle sutil para separar */
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px; /* [cite: 34] Aumentamos un poco para mejor lectura en negativo */
+    margin: 20px;
+    line-height: 1.5; /* Separamos las líneas para que respire */
+}
+
+/* CLASES ESPECÍFICAS SEGÚN TEMA
+   Nota de Mentor: He cambiado los colores estándar (blue, red...) 
+   por sus versiones "Light" para que se lean sobre el fondo oscuro. */
+
+/* 1. CLASE INFANCIA */
+p.infancia {
+    color: #64b5f6; /* Un cian/azul claro en lugar de azul oscuro [cite: 36] */
+    font-family: "Times New Roman", serif; /* [cite: 22, 37] */
+    font-style: italic; /* [cite: 38] */
+}
+
+/* 2. CLASE ANIMALES */
+p.animales {
+    color: #81c784; /* Un verde lima suave en lugar de verde oscuro [cite: 40] */
+    font-family: Arial, sans-serif; /* [cite: 23, 41] */
+    letter-spacing: 2px; /* [cite: 42] Requisito obligatorio */
+}
+
+/* 3. CLASE LITERATURA */
+p.literatura {
+    color: #ce93d8; /* Un lila/violeta claro en lugar de morado oscuro [cite: 44] */
+    font-family: "Courier New", monospace; /* [cite: 24, 45] */
+    font-size: 20px; /* [cite: 46] Requisito de tamaño distinto */
+}
+
+/* 4. CLASE NUMEROS */
+p.numeros {
+    color: #e57373; /* Un rojo salmón suave en lugar de rojo sangre [cite: 48] */
+    font-family: "Comic Sans MS", cursive; /* [cite: 24, 49] */
+    word-spacing: 10px; /* [cite: 50] Requisito obligatorio */
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #888; /* Gris medio para texto menos importante */
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}

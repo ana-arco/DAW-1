@@ -1,0 +1,63 @@
+/* Reset básico para quitar márgenes por defecto del navegador */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    background-color: #f0f2f5; /* Fondo gris muy suave para la página */
+    display: flex;
+    justify-content: center; /* Centramos la tarjeta horizontalmente */
+    padding-top: 50px;
+}
+
+/* Estilo del contenedor de la tarjeta (La "Caja") [cite: 34, 35] */
+.tarjeta-container {
+    background-color: #2d3436; /* Gris oscuro elegante */
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados modernos */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra suave y difusa */
+    text-align: center; /* Alineamos todo al centro */
+    border: 1px solid #4b5563; /* Borde sutil */
+}
+
+/* Requisito PDF: Modificar ID #nombre [cite: 29] */
+#nombre {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Todo en mayúsculas para impacto */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: transparent; /* Quitamos el fondo rosa que tenías */
+    border: none; /* Quitamos el borde outset antiguo */
+}
+
+/* Requisito PDF: Modificar clase .profesion [cite: 30, 33] */
+.profesion {
+    color: #00b894; /* Verde menta (muy "código") */
+    font-family: 'Courier New', Courier, monospace; /* Fuente tipo máquina de escribir */
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px; /* Espacio antes del contacto */
+    border-bottom: 2px solid #00b894; /* Línea decorativa debajo */
+    display: inline-block; /* Para que la línea ocupe solo lo que el texto */
+    padding-bottom: 5px;
+}
+
+/* Requisito PDF: Modificar clase .contacto [cite: 30] */
+.contacto {
+    color: #b2bec3; /* Gris claro para texto secundario */
+    font-size: 14px; [cite: 32]
+    background-color: #353b48; /* Fondo ligeramente más claro que la tarjeta */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left; /* El contacto se lee mejor a la izquierda dentro de su caja */
+    transition: 0.3s; /* Suavizar cambios */
+}
+
+/* UX Extra: Efecto al pasar el ratón */
+.contacto:hover {
+    background-color: #3c4453;
+    color: white;
+    cursor: pointer;
+}

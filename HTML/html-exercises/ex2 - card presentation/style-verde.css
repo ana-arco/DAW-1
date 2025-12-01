@@ -1,0 +1,129 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0;
+    /* Fondo Beige suave (Papel reciclado) */
+    background-color: #efebe9; 
+    /* Fuente Serif (Georgia) para dar toque de "escritura" o libro */
+    font-family: 'Georgia', serif; 
+    color: #3e2723; /* Texto marrón muy oscuro (Casi negro) */
+}
+
+/* --- REQUISITO 1: ENCABEZADO (Selector por ID) --- */
+#cabecera {
+    /* Fondo Verde Bosque Intenso */
+    background-color: #2e7d32; 
+    color: #ffffff; /* Texto blanco para contraste */
+    
+    /* PADDING 1: Amplio (50px) */
+    padding: 50px 20px; 
+    
+    /* BORDE TIPO 1: SÓLIDO (Madera) */
+    border-bottom: 10px solid #5d4037; 
+    
+    /* MARGEN 1: Separación inferior */
+    margin-bottom: 40px; 
+    
+    text-align: center;
+}
+
+#cabecera h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-style: italic; /* Cursiva elegante */
+    text-shadow: 2px 2px 0px #1b5e20; /* Sombra verde oscura */
+}
+
+.subtitulo {
+    color: #c8e6c9; /* Verde muy claro (Sage) */
+    font-family: 'Verdana', sans-serif; /* Contraste con sans-serif */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/* --- REQUISITO 2: SECCIÓN "SOBRE MÍ" (Selector por Clase) --- */
+.sobre-mi {
+    /* Fondo blanco puro para leer bien */
+    background-color: #ffffff; 
+    
+    /* Ancho controlado */
+    max-width: 550px; 
+    
+    /* PADDING 2: Medio (35px) - Diferente al header */
+    padding: 35px; 
+    
+    /* MARGEN 2: Centrado (Auto) con separación inferior */
+    margin: 0 auto 35px auto; 
+    
+    /* Borde Verde fino */
+    border: 2px solid #2e7d32; 
+    
+    /* Border Radius: Esquinas opuestas redondeadas (Efecto Hoja 🍃) */
+    border-radius: 30px 0 30px 0;
+    
+    /* Sombra marrón muy suave */
+    box-shadow: 5px 5px 0px rgba(93, 64, 55, 0.2); 
+}
+
+.sobre-mi h3 {
+    color: #5d4037; /* Título Marrón */
+    border-bottom: 1px dashed #a1887f; /* Línea discontinua sutil */
+    padding-bottom: 10px;
+}
+
+/* --- REQUISITO 3: SECCIÓN "HOBBIES" (Selector por Clase) --- */
+.hobbies {
+    /* Fondo Verde muy pálido (Mint cream) */
+    background-color: #e8f5e9; 
+    
+    max-width: 550px;
+    
+    /* PADDING 3: Compacto (25px) - Diferente a los anteriores */
+    padding: 25px; 
+    
+    /* MARGEN 3: Distinto */
+    margin: 0 auto 60px auto; 
+    
+    /* BORDE TIPO 2: PUNTEADO (DOTTED) - Requisito cumplido */
+    border: 4px dotted #5d4037; 
+    
+    border-radius: 15px;
+}
+
+.hobbies h3 {
+    background-color: #2e7d32;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px; /* Título tipo "Etiqueta" */
+    margin-top: 0;
+}
+
+/* Estilo de la lista */
+ul {
+    list-style: none; /* Quitamos puntos defecto */
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    /* Fondo tipo "pósito" o nota adhesiva */
+    background-color: #fff3e0; /* Naranja/Crema muy suave */
+    color: #4e342e;
+    
+    /* Separación */
+    margin-bottom: 12px;
+    padding: 15px;
+    
+    /* Detalle de diseño: Borde solo a la izquierda */
+    border-left: 6px solid #2e7d32; 
+    
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Interacción extra */
+li:hover {
+    background-color: #ffe0b2;
+    cursor: pointer;
+}

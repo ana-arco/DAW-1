@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+	background-color: pink;
+	font-family: Arial;
+}
+
+h1 {
+	font-size: 12px;
+	font-variant: ;
+}
+
+p {
+	font-size: 8px
+}
+
+p.infancia {
+	color: blue;
+	font-family: Times New Roman;
+	font-style: italic;
+}
+
+p.animales {
+	color: orange;
+	font-family: serif;
+	letter-spacing: 3px;
+}
+
+p.literatura {
+	color: blue;
+	font-family: Helvetica;
+	font-size: 10px;
+}
+
+p.numeros {
+	color: red;
+	font-family: sans-serif;
+}
+

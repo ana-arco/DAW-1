@@ -1,0 +1,89 @@
+estilo-a.css
+
+@charset "utf-8";
+
+/* REGLAS GENERALES */
+body {
+    /* Requisito: color de fondo y tipo de letra [cite: 27, 28, 29] */
+    /*background-color: rgba(0, 128, 0, 0.3) *//* Green background with 30% opacity */
+	background-color: #f0f0f0; /* Un gris suave para que resalten los colores */
+    font-family: Arial, sans-serif; 
+	
+}
+
+/* 3. CONTENEDOR PRINCIPAL 
+   Centramos el contenido y limitamos el ancho para que no se estire demasiado */
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 40px 20px;
+	background-color: rgba(0, 128, 0, 0.3)
+}
+
+h1 {
+    /* Requisito: tamaño de letra y versalitas [cite: 30, 31, 32] */
+    font-size: 2em;
+    font-variant: small-caps; /* Esto convierte minúsculas en mayúsculas pequeñas (versalitas) */
+    text-align: center; /* Centrado estético */
+    color: #333;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+p {
+    /* Requisito: tamaño de letra general para párrafos [cite: 33, 34] */
+    font-size: 16px;
+    margin: 15px 20px; /* Un poco de margen para que no se peguen */
+}
+
+/* CLASES ESPECÍFICAS SEGÚN TEMA */
+
+/* 1. CLASE INFANCIA */
+p.infancia {
+    /* Requisitos: color, fuente serif, cursiva [cite: 35, 36, 37, 38] */
+    color: blue;
+    font-family: "Times New Roman", serif; /* Fuente genérica serif [cite: 22] */
+    font-style: italic; /* Cursiva */
+}
+
+/* 2. CLASE ANIMALES */
+p.animales {
+    /* Requisitos: color, fuente sans-serif, letter-spacing [cite: 39, 40, 41, 42] */
+    color: green;
+    font-family: Arial, sans-serif; /* Fuente genérica sans-serif [cite: 23] */
+    letter-spacing: 2px; /* Separación entre caracteres */
+}
+
+/* 3. CLASE LITERATURA */
+p.literatura {
+    /* Requisitos: color, fuente monospace, font-size [cite: 43, 44, 45, 46] */
+    color: purple;
+    font-family: "Courier New", monospace; /* Fuente genérica monospace [cite: 24] */
+    font-size: 18px; /* Un tamaño diferente al general */
+}
+
+/* 4. CLASE NUMEROS */
+p.numeros {
+    /* Requisitos: color, fuente cursive, word-spacing [cite: 47, 48, 49, 50] */
+    color: red;
+    font-family: "Comic Sans MS", cursive; /* Fuente genérica cursive [cite: 24] */
+    word-spacing: 10px; /* Separación entre palabras */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #95a5a6;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+/*
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 30px;
+    border-top: 1px solid #999;
+    padding-top: 10px;
+}*/

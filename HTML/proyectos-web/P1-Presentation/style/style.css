@@ -1,0 +1,333 @@
+css
+
+/* =========================================
+   1. VARIABLES Y FUENTES
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    /* Paleta de colores "Humanismo Digital" */
+    --primary-color: #1a253a;    /* Azul noche profundo (Telescopio/Seriedad) */
+    --accent-color: #c5a059;     /* Dorado envejecido (Música/Historia) */
+    --bg-light: #f9f9f7;         /* Blanco roto (Papel/Partitura) */
+    --text-color: #333333;       /* Gris oscuro para lectura */
+    --text-light: #ffffff;       /* Texto sobre fondos oscuros */
+    
+    /* Espaciados */
+    --container-width: 900px;
+    --spacing-unit: 1rem;
+}
+
+/* =========================================
+   2. RESET BÁSICO
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna para leer */
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer siempre baje */
+}
+
+/* =========================================
+   3. ENCABEZADO Y NAVEGACIÓN
+   ========================================= */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky; /* Menú pegajoso al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    gap: 2rem; /* Espacio entre enlaces */
+    flex-wrap: wrap; /* Para móviles */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* =========================================
+   4. ESTRUCTURA PRINCIPAL (MAIN)
+   ========================================= */
+main {
+    max-width: var(--container-width);
+    margin: 2rem auto; /* Centrado automático */
+    padding: 0 20px;
+    flex: 1; /* Empuja el footer hacia abajo */
+    width: 100%;
+}
+
+/* Títulos con fuente "Clásica" */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Centrar el H1 en el contenedor padre si es necesario */
+main > h1 {
+    display: table; /* Truco para centrar elemento con borde ajustado */
+    margin: 0 auto 2rem auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+/* Enlaces dentro del texto */
+main a {
+    color: #2c5282;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dotted #2c5282;
+}
+
+main a:hover {
+    background-color: #e2e8f0;
+}
+
+/* =========================================
+   5. IMÁGENES Y FIGURAS
+   ========================================= */
+img {
+    max-width: 100%; /* Responsive: nunca se saldrán de la pantalla */
+    height: auto;
+    border-radius: 8px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+figcaption {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Avatar específico (redondo) */
+img[alt*="avatar"], img[alt*="Avatar"] {
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Controlamos tamaño */
+    height: 200px;
+    object-fit: cover;
+}
+
+/* =========================================
+   6. COMPONENTES ESPECÍFICOS
+   ========================================= */
+
+/* --- Tablas (Trayectoria) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Efecto hover en filas */
+}
+
+/* --- Aside (Datos Curiosos) --- */
+aside {
+    background-color: #eef2f5;
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    border-radius: 0 8px 8px 0;
+}
+
+aside h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+/* --- Formulario (Contacto) --- */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(197, 160, 89, 0.5);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Efecto zoom en iconos */
+}
+
+/* Filtro para hacer los iconos blancos en el footer */
+.social-links img {
+    filter: invert(1) brightness(2); 
+    width: 30px;
+    box-shadow: none;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* =========================================
+   8. RESPONSIVE (MÓVIL)
+   ========================================= */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto; /* Scroll horizontal si la tabla no cabe */
+    }
+    
+    img[alt*="avatar"] {
+        width: 150px;
+        height: 150px;
+    }
+}

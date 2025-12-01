@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Bitácora e instrumentos" content="Panel de control y monitoreo del Nordic Optical Telescope. Acceso a datos científicos y estado del sistema.">
+    
+    <title>Dashboard NOT | Nordic Optical Telescope</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="contenidos/img/logo3.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="inicio">
+        
+        <img src="https://www.not.iac.es/general/photos/telescope/views/radko2013_wide.PNG" 
+             alt="Panorámica de la Sala de Control del Nordic Optical Telescope con monitores de telemetría" 
+             loading="eager"
+             style="width: 100vw; height: auto; display: block; margin-left: -8px; margin-top: -8px; max-width: none;">
+             <!--se pone el -8 en los márgenes porque actualmente los navegadores (edge, chrome...) ponen la etiqueta body un margen automático de 8px.-->
+        
+        <hgroup><center>
+            <h1>NORDIC OPTICAL TELESCOPE</h1>
+            <h2>NOT Dashboard | Sistema de Monitoreo Científico</h2>
+            </center>
+        </hgroup>
+
+        <nav aria-label="Menú Principal">
+            <hr>
+            <ul>
+                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <section id="logs">
+            <header>
+                <h2>Bitácora de Misión: Noche 243</h2>
+                <p>Registro de turnos, objetivos y estado de instrumentos.</p>
+            </header>
+
+            <table border="1" cellpadding="2" cellspacing="0" width="90%" align="center">
+                
+                <caption>Programación del Telescopio - 20 Nov 2023</caption>
+
+                <colgroup>
+                    <col span="1" style="background-color: #f0f0f0; width: 10%;">
+                    <col span="1" style="width: 20%;">
+                    <col span="3" style="width: 70%;">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Hora (UTC)</th>
+                        <th scope="col">Astrónomo Principal</th>
+                        <th scope="col">Objeto Objetivo</th>
+                        <th scope="col">Instrumento</th>
+                        <th scope="col">Estado / Notas</th>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Total de horas de observación programadas:</th>
+                        <td>4 Horas</td>
+                    </tr>
+                </tfoot>
+
+                <tbody>
+                    
+                    <tr>
+                        <th scope="row">22:00</th>
+                        <td>Dr. J. Pérez</td>
+                        <td>NGC 4565 (Galaxia)</td>
+                        <td>Alfosc</td>
+                        <td><mark>Prioridad Alta</mark></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">23:00</th>
+                        
+                        <td rowspan="2" style="vertical-align: middle;">Dr. A. Smith</td>
+                        
+                        <td>Supernova SN2023</td>
+                        <td>NotCam</td>
+                        <td>Exposición larga</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">00:00</th>
+                        <td>Supernova SN2023</td>
+                        <td>NotCam</td>
+                        <td>Continuación de exp.</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">01:00</th>
+                        <td>Ing. Mantenimiento</td>
+                        
+                        <td colspan="3" style="text-align: center; background-color: #ffcccc;">
+                            <strong>PARADA TÉCNICA: Recalibración de Láser Guía</strong>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <section>
+            <aside>
+                <h3>Leyenda de Instrumentos</h3>
+                <ul>
+                    <li>
+                        <strong>ALFOSC</strong>: 
+                        <dfn>Alhambra Faint Object Spectrograph and Camera</dfn>.
+                    </li>
+
+                    <li>
+                        <strong>NOTCam</strong>: 
+                        <dfn>Nordic Optical Telescope Infrared Camera</dfn>.
+                    </li>
+
+                    <li>
+                        <strong>FIES</strong>: 
+                        <dfn>FIbre-fed Echelle Spectrograph</dfn>.
+                    </li>
+
+                    <li>
+                        <strong>StanCam</strong>: 
+                        <dfn>Standby Camera</dfn>.
+                    </li>
+
+                    <li>
+                        <strong>DIPol-UF</strong>: 
+                        <dfn>Double Image Polarimeter - Ultra Fast</dfn>.
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="instrumentation-panel"><center>
+            <header>
+                <h2>Inventario de Instrumentación</h2>
+                <p>Catálogo técnico completo del Nordic Optical Telescope.</p>
+            </header>
+                <table border="1" width="90%">
+                    <caption>Listado Oficial de Instrumentos (Estado Actual e Histórico)</caption>
+
+                    <colgroup>
+                        <col style="width: 15%; background-color: #f9f9f9;"> <col style="width: 60%;"> <col style="width: 25%;"> </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Sigla / ID</th>
+                            <th scope="col">Nombre Técnico y Definición</th>
+                            <th scope="col">Tipo de Uso</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="group-core">
+                        <tr style="background-color: #e3f2fd;">
+                            <th colspan="3" scope="rowgroup" style="text-align: center; padding: 10px;">
+                                INSTRUMENTOS PRINCIPALES (CORE)
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td><strong>ALFOSC</strong></td>
+                            <td><dfn>Alhambra Faint Object Spectrograph and Camera</dfn></td>
+                            <td>Imagen UV-Óptica</td>
+                        </tr>
+                        <tr>
+                            <td><strong>NOTCam</strong></td>
+                            <td><dfn>Nordic Optical Telescope Infrared Camera</dfn></td>
+                            <td>Infrarrojo (NIR)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>FIES</strong></td>
+                            <td><dfn>FIbre-fed Echelle Spectrograph</dfn></td>
+                            <td>Alta Resolución (Exoplanetas)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>StanCam</strong></td>
+                            <td><dfn>Standby Camera</dfn></td>
+                            <td>Cámara de Reserva</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody class="group-visitors">
+                        <tr style="background-color: #fff3cd;">
+                            <th colspan="3" scope="rowgroup" style="text-align: center; padding: 10px;">
+                                INSTRUMENTOS VISITANTES (Acceso Limitado)
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td><strong>DIPol-UF</strong></td>
+                            <td><dfn>Double Image Polarimeter - Ultra Fast</dfn></td>
+                            <td>Polarimetría Rápida</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SOFIN</strong></td>
+                            <td><dfn>Soviet-Finnish optical high-resolution spectrograph</dfn></td>
+                            <td>Espectrografía Rusa-Finesa</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody class="group-legacy">
+                        <tr style="background-color: #e9ecef; color: #6c757d;">
+                            <th colspan="3" scope="rowgroup" style="text-align: center; padding: 10px;">
+                                INSTRUMENTOS RETIRADOS (Legacy)
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td><del>LuckyCam</del></td> <td><dfn>Lucky Imaging Camera</dfn></td>
+                            <td>Retirado</td>
+                        </tr>
+                        <tr>
+                            <td><del>PolCor</del></td>
+                            <td><dfn>Polarimeter & Coronagraph</dfn></td>
+                            <td>Retirado</td>
+                        </tr>
+                        <tr>
+                            <td><del>SIRCA</del></td>
+                            <td><dfn>Stockholm InfraRed CAmera</dfn></td>
+                            <td>Retirado</td>
+                        </tr>
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: center; font-size: 0.8em;">
+                                <em>Total de instrumentos listados: 9 | Última actualización: Nov 2025</em>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </center>
+            </section>
+    </main>
+
+
+    
+    <footer>
+        <br>
+        <hr>
+        <div class="footer-container">
+            <h3>Nordic Optical Telescope</h3>
+            <p></p>            
+        </div>
+        <div class="footer-nav">
+            <table  border="1" cellpadding="2" cellspacing="10" width="100%" align="center">
+                <tr>
+                    <td>
+                        <nav aria-label="Menú Principal">
+                            <ul>
+                                <li><a href="index.html" class="active" accesskey="i">Inicio (Dashboard)</a></li>
+                                <li><a href="bitacora.html" accesskey="b">Bitácora de Misión</a></li>
+                                <li><a href="manual.html" accesskey="m">Reportes y Manual</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td> 
+                        <div class="footer-columna2">
+                            <ul>
+                                <li><a href="https://www.not.iac.es/">Página Oficial del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/photos/">Galería del NOT</a></li>
+                                <li><a href="https://www.not.iac.es/general/contacts/">Contactos Actuales del NOT</a></li>
+                            </ul> 
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-footer">                          
+                            <ul>
+                                <address>
+                                    <strong>Nordic Optical Telescope</strong><br>
+                                    Observatorio del Roque de los Muchachos<br>
+                                    La Palma, Islas Canarias<br>
+                                    Email: <a href="mailto:ejemplo-staff@not.iac.es">staff@not.iac.es</a>
+                                </address>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        <br>
+        <small><center>
+            &copy; 2025 Proyecto Educativo. Desarrollado por Ana Arco Izquierdo.
+        </center></small>
+        <br>
+    </footer>
+</body>
+</html>

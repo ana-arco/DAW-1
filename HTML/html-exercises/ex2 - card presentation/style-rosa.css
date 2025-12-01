@@ -1,0 +1,111 @@
+css
+
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0; /* Reset básico */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec; /* Fondo rosa muy pálido (base) */
+    color: #4a4a4a; /* Texto gris oscuro para lectura */
+}
+
+/* --- REQUISITO 1: ENCABEZADO (Selector por ID) --- */
+#cabecera {
+    /* Color de fondo y texto */
+    background-color: #880e4f; /* Burdeos intenso */
+    color: white; 
+    
+    /* Padding mínimo 20px (aquí usamos 50px para que respire) */
+    padding: 50px 20px; 
+    
+    /* Borde visible (Tipo 1: Sólido) */
+    border-bottom: 5px solid #c2185b; 
+    
+    /* Margin-bottom para separar del contenido */
+    margin-bottom: 40px; 
+    
+    text-align: center; /* Centramos el texto del título */
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    font-weight: 300; /* Letra más fina */
+    color: #f8bbd0; /* Rosa claro para jerarquía visual */
+    margin-top: 10px;
+}
+
+/* --- REQUISITO 2: SECCIÓN SOBRE MÍ (Selector por Clase) --- */
+.sobre-mi {
+    /* Color de fondo para visualizar la caja */
+    background-color: white; 
+    
+    /* Width o max-width entre 400-600px */
+    max-width: 550px; 
+    
+    /* Padding para separar texto del borde */
+    padding: 30px; 
+    
+    /* Márgenes para centrar (arriba/abajo 0, izq/der auto) */
+    margin: 0 auto 30px auto; 
+    
+    /* Borde y Border-radius */
+    border: 1px solid #f48fb1; /* Borde sutil */
+    border-radius: 15px; /* Bordes redondeados */
+    
+    /* Extra: Sombra suave para dar profundidad */
+    box-shadow: 0 4px 15px rgba(136, 14, 79, 0.1);
+}
+
+.sobre-mi h3 {
+    color: #c2185b;
+    border-bottom: 2px solid #fce4ec;
+    padding-bottom: 10px;
+}
+
+/* --- REQUISITO 3: SECCIÓN HOBBIES (Selector por Clase) --- */
+.hobbies {
+    /* Color de fondo DIFERENTE al anterior */
+    background-color: #fff0f6; /* Un rosa casi blanco, diferente al blanco puro */
+    
+    /* Reutilizamos ancho para que queden alineadas las cajas */
+    max-width: 550px; 
+    
+    /* Padding y márgenes distintos */
+    padding: 30px; 
+    margin: 0 auto 50px auto; /* Margen inferior más grande */
+    
+    /* 2 tipos de bordes: Aquí usamos DASHED (punteado) */
+    border: 2px dashed #ec407a; 
+    border-radius: 15px;
+}
+
+.hobbies h3 {
+    color: #ec407a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Modificar estilo de lista */
+ul {
+    list-style-type: none; /* Quitamos los puntos negros feos */
+    padding: 0;
+}
+
+li {
+    /* Separación y tamaño */
+    margin-bottom: 15px;
+    font-size: 18px; /* Tamaño legible, no 10px */
+    color: #880e4f;
+    
+    /* Truco visual: Borde izquierdo como decoración */
+    border-left: 4px solid #f06292; 
+    padding-left: 15px; /* Espacio entre el borde rosa y el texto */
+    background-color: white; /* Pequeño fondo para cada item */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

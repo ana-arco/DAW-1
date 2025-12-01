@@ -1,0 +1,83 @@
+/* Configuración base */
+body {
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    background-color: #fce4ec; /* Fondo rosa muy suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrado vertical total */
+    margin: 0;
+}
+
+/* Contenedor de la tarjeta (Necesario para el efecto visual) */
+.tarjeta-container {
+    background-color: white;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    /* Sombra rosa suave para integrarlo con el fondo */
+    box-shadow: 0 20px 40px rgba(233, 30, 99, 0.15);
+    text-align: center;
+    border: 1px solid #f8bbd0; /* Borde sutil */
+}
+
+/* --- Requisito PDF: Estilo para ID #nombre --- */
+#nombre {
+    color: #880e4f; /* Burdeos oscuro para lectura fácil */
+    background-color: transparent; /* Limpio, sin cajas de color bloque */
+    font-size: 32px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-family: 'Georgia', serif; /* Fuente con serifa para elegancia */
+    letter-spacing: 1px;
+    
+    /* Eliminamos los bordes gruesos del ejercicio anterior */
+    border: none; 
+    padding: 0;
+    text-shadow: none;
+}
+
+/* --- Requisito PDF: Estilo para clase .profesion --- */
+.profesion {
+    color: #ec407a; /* Rosa vibrante medio */
+    font-family: 'Verdana', sans-serif; /* Cambio de fuente solicitado */
+    font-size: 14px;
+    text-transform: uppercase; /* Mayúsculas elegantes */
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+    /* Decoración visual */
+    background-color: #fce4ec;
+    padding: 8px 20px;
+    border-radius: 50px; /* Forma de píldora */
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* --- Requisito PDF: Estilo para clase .contacto --- */
+.contacto {
+    color: #ad1457; /* Tono intermedio para texto secundario */
+    font-size: 16px;
+    background-color: white; /* Fondo limpio */
+    border: 1px solid #f48fb1; /* Borde rosa pastel */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease; /* Suavidad al mover el ratón */
+}
+
+/* UX Extra: Interacción */
+.contacto:hover {
+    background-color: #fce4ec; /* Se oscurece ligeramente al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.1);
+}
+
+/* Requisito PDF: Cambio de tamaño general de p */
+p {
+    font-size: 16px; /* Ajuste base */
+    line-height: 1.5; /* Espaciado entre líneas para que respire */
+}

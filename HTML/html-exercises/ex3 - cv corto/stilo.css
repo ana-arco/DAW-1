@@ -1,0 +1,119 @@
+stilo.css
+
+/* =========================================
+   1. RESET Y BASE
+   ========================================= */
+* {
+    box-sizing: border-box; /* Para que el padding no cambie el ancho */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente sans-serif clásica */
+    color: #333; /* Color de texto gris oscuro */
+    margin: 20px auto; /* Centrado y con margen arriba/abajo */
+    max-width: 960px; /* Ancho máximo para que no se estire infinito */
+    padding: 0 10px; /* Un poco de margen lateral */
+}
+
+/* =========================================
+   2. ENCABEZADO PRINCIPAL (H1)
+   ========================================= */
+h1 {
+    text-align: center;
+    text-transform: uppercase; /* Fuerza las mayúsculas */
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   3. BLOQUES DE TÍTULO (H2) - Las barras oscuras
+   ========================================= */
+h2 {
+    background-color: #778899; /* Gris azulado oscuro (LightSlateGray) */
+    color: #333; /* Texto oscuro */
+    padding: 10px; /* Espacio interno */
+    margin: 0; /* Quitamos margen para pegarlo a los párrafos si fuera necesario */
+    margin-top: 15px; /* Separación con el bloque anterior */
+    font-size: 1.3rem;
+    text-decoration: underline; /* El subrayado que se ve en la imagen */
+    border-bottom: 1px solid #555; /* Refuerzo visual opcional */
+}
+
+/* =========================================
+   4. BLOQUES DE CONTENIDO (P) - Las barras claras
+   ========================================= */
+p {
+    background-color: #dae3e8; /* Gris azulado muy claro */
+    padding: 10px;
+    margin: 0; /* Quitamos márgenes por defecto */
+    margin-bottom: 2px; /* Pequeña línea blanca de separación entre párrafos */
+    font-size: 0.95rem;
+}
+
+/* El primer párrafo debajo del H1 también necesita ese fondo */
+h1 + p {
+    margin-bottom: 20px; /* Un poco de aire antes de "Datos personales" */
+}
+
+/* =========================================
+   5. SUBTÍTULOS (H3) - Idiomas
+   ========================================= */
+h3 {
+    background-color: #b0c4de; /* Un azul intermedio (LightSteelBlue) */
+    padding: 8px 10px;
+    margin: 0;
+    margin-bottom: 2px; /* Separación blanca pequeña */
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/* =========================================
+   6. ESTILOS DE TEXTO ESPECÍFICOS
+   ========================================= */
+/* Las etiquetas (Nombre, Dirección...) en negrita */
+strong {
+    color: #334455; /* Un tono un poco más azulado */
+}
+
+/* Los nombres de las escuelas (em) en azul brillante */
+em {
+    color: #0077cc; /* Azul brillante estilo enlace */
+    font-style: normal; /* Quitamos la cursiva por defecto */
+    font-weight: bold;
+    text-transform: uppercase; /* En la imagen parecen mayúsculas pequeñas */
+    font-size: 0.9em;
+}
+
+/* =========================================
+   7. PIE DE PÁGINA Y DIRECCIÓN
+   ========================================= */
+hr {
+    display: none; /* En la imagen no se ve la línea <hr>, la ocultamos */
+}
+
+address {
+    text-align: right; /* Alineado a la derecha */
+    background-color: transparent; /* Fondo blanco/transparente */
+    padding: 15px 0;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Clase .libre (el pie gris del final) */
+.libre {
+    background-color: #d3d3d3; /* Gris claro */
+    text-align: left; /* Alineado a la izquierda según la imagen */
+    padding: 10px;
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #333;
+    /* Ajuste para las citas dentro del pie */
+}
+
+.libre cite {
+    font-style: italic;
+}

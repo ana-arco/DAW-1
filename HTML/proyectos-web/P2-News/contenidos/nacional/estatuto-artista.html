@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacional - CWH </title>
+    <link rel="icon" type="image/jpg" href="../../images/favicon.jpg">
+</head>
+<body>
+    <header>
+        <table width="100%">
+            <tr>
+                <td><i>Lunes, día 10 de Noviembre de 2025</i></td>
+                <td><center>
+                    <a href="../../index.html">
+                        <img src="../../images/logo.jpg" width="270">
+                    </a></center></td>
+                <td><input placeholder="hoy quiero leer sobre ..."></td>
+                <td><img src="data:image/png;base64,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" 
+                        alt="icono de lupa para búsquedas" width="35"></td>
+            </tr>
+        </table>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="../nacional/home-page-nacional.html">NACIONAL</a></li>
+                <li><a href="../internacional/home-page-internacional.html">INTERNACIONAL</a></li>
+                <li><a href="../deportes/home-page-deportes.html">DEPORTES</a></li>
+                <li><a href="../Ocio/home-page-ocio.html">OCIO</a></li>
+                <li><a href="../formacion/home-page-formacion.html">FORMACIÓN</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <article>
+
+        <header>
+            <h1>
+                El 'Estatuto del Artista' atascado en el Congreso: 
+                La precariedad crónica del sector cultural español.
+            </h1>
+            
+            <p>
+                Analizamos las claves de una reforma prometida desde 2018 
+                y que, 7 años después, sigue atascada en sus puntos 
+                fiscales más cruciales. ¿Qué se ha logrado y por qué 
+                la precariedad del sector sigue en debate?
+            </p>
+
+            <p>
+                Publicado el 
+                <time datetime="2025-11-09">10 de noviembre de 2025</time>
+            </p>
+        </header>
+
+        <br>
+
+        <figure>
+            <img 
+                src="https://cdn.pixabay.com/photo/2014/11/10/17/19/congress-525676_1280.jpg" 
+                alt="Fachada del Congreso de los Diputados en Madrid, con los leones."
+                width="800">
+            <figcaption>
+                Fachada del Congreso de los Diputados, 
+                lugar del debate parlamentario.
+            </figcaption>
+        </figure>
+
+        <br>
+
+        <section>
+            <h2>¿Qué es el Estatuto del Artista?</h2>
+            <p>
+                El Estatuto del Artista no es una sola ley, sino un 
+                conjunto de reformas destinadas a reconocer la 
+                intermitencia y precariedad del trabajo cultural.
+            </p>
+            <p>
+                El debate moderno arrancó en <strong>septiembre de 2018</strong>, 
+                cuando una subcomisión del Congreso aprobó por unanimidad 
+                un informe con 75 medidas. El objetivo: adaptar las 
+                rígidas normas laborales de España a la realidad de un 
+                músico, un actor o un técnico de luces.
+            </p>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>El problema: Realidad vs. Burocracia</h2>
+            <p>
+                Para entender la urgencia, hay que analizar y comparar 
+                la situación actual de la propuesta:
+            </p>
+            
+            <table border="1"> <caption>Comparativa: Situación del Artista</caption>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Precariedad Actual (Cómo es)</th>
+                        <th>Propuesta del Estatuto (Cómo sería)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cotización</strong></td>
+                        <td>
+                            El artista debe darse de alta por cada 
+                            "bolo" o trabajo. Si trabaja 2 días, 
+                            cotiza 2 días, perdiendo acceso a paro.
+                        </td>
+                        <td>
+                            Se crea una cotización intermitente 
+                            adaptada, que no penalice los periodos 
+                            sin ingresos (ej: un actor ensayando).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jubilación</strong></td>
+                        <td>
+                            Si un artista jubilado crea (escribe un 
+                            libro, da un concierto), puede perder 
+                            su pensión.
+                        </td>
+                        <td>
+                            Compatibilidad total entre la pensión 
+                            de jubilación y los ingresos por 
+                            derechos de autor o creación.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Desempleo</strong></td>
+                        <td>
+                            Se exigen largos periodos de cotización 
+                            continuada, imposibles de alcanzar 
+                            para la mayoría.
+                        </td>
+                        <td>
+                            Se reduce el número de días cotizados 
+                            necesarios para acceder a la prestación 
+                            por desempleo.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <section>
+
+            <blockquote>
+                <p>
+                    "Lo que pedimos es que se legisle de una vez 
+                    una realidad laboral que es específica nuestra. 
+                    No es un privilegio, es una cuestión de justicia 
+                    para la cultura."
+                </p>
+                <cite>
+                    — Javier Bardem, en declaraciones de apoyo 
+                    a la Unión de Actores.
+                </cite>
+                <br>
+                <img  
+                    src="https://img2.rtve.es/i/?w=1600&i=01752600680223.jpg"
+                    alt="Javier Bardem en el Festival de Cine de San Sebastián en 2025."
+                    width="200">
+            </blockquote>
+
+        
+            <h2>Otras Voces Relevantes del Sector</h2>
+            <p>
+                El clamor por el Estatuto no viene de una sola voz. 
+                Figuras clave del cine español, desde la producción 
+                hasta la portavocía, han señalado la urgencia.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Antonio Banderas</strong>, en su importante 
+                faceta como <strong>productor de cine</strong>, ha sido 
+                especialmente crítico con las trabas burocráticas:
+            </p>
+
+            <blockquote>
+                <p>
+                    "Producir en España es un infierno burocrático. 
+                    Te pasas el 80% del tiempo rellenando papeles. 
+                    Necesitamos un marco legal claro que proteja al 
+                    creador pero que también facilite la producción..."
+                </p>
+                <cite>— Antonio Banderas</cite>
+                <br>
+                <img  
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/72/Goyas_2025_-_Antonio_Banderas_%28cropped%29.jpg"
+                    alt="Javier Bardem en el Festival de Cine de San Sebastián en 2025."
+                    width="200">
+            </blockquote>
+
+            <br>
+
+            <p>
+                Del mismo modo, <strong>Aitana Sánchez-Gijón</strong>, 
+                a menudo como portavoz de la Unión de Actores 
+                y ex-presidenta de la Academia de Cine, ha 
+                insistido en la urgencia:
+            </p>
+
+            <blockquote>
+                <p>
+                    "El Estatuto es una herramienta fundamental para la 
+                    dignificación de nuestra profesión. Es una demanda 
+                    histórica que representa a todo el sector cultural 
+                    y que no puede esperar más."
+                </p>
+                <cite>— Aitana Sánchez-Gijón</cite>
+                <br>
+                <a href="https://www.academiadecine.com/mce/artistas/sanchez-gijon-aitana/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img  
+                        src="https://www.academiadecine.com/wp-content/uploads/2025/02/Aitana-Sa%CC%81nchez-Gijo%CC%81n-04-BIS-588x588.jpg"
+                        alt="Aitana Sanchez-Gijón"
+                        width="200">
+                </a>
+            </blockquote>
+        </section>
+
+        
+
+        <br>
+
+        <section>
+            <h2>Estado Actual: ¿Cuánto tiempo lleva parado?</h2>
+            <p>
+                La sensación de "parálisis" es real, aunque ha habido 
+                avances. La última vez que se vieron progresos fue a 
+                <strong>principios de 2023</strong>, cuando el Gobierno 
+                aprobó un Real Decreto-ley que mejoraba la protección 
+                por desempleo (el "paro" de los artistas).
+            </p>
+            <p>
+                Sin embargo, los grandes escollos, los que dependen 
+                de Hacienda, siguen en el cajón. Siete años después 
+                del informe de 2018, estos son los puntos que la 
+                política aún no ha resuelto:
+            </p>
+            <ul>
+                <li>
+                    <strong>Fiscalidad (El gran atasco):</strong> 
+                    La bajada del IVA cultural para los propios 
+                    creadores (no solo para el espectador).
+                </li>
+                <li>
+                    <strong>Jubilación:</strong> La compatibilidad 
+                    total con la creación sigue sin una 
+                    legislación clara.
+                </li>
+                <li>
+                    <strong>Definición:</strong> La propia definición 
+                    política de quién es "artista" y quién no.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>El Ángulo Digital: ¿Y los Creadores Web?</h2>
+            <p>
+                Un punto ciego del debate es cómo afectará este 
+                Estatuto a los <strong>nuevos creadores digitales</strong>. 
+                La ley, pensada para actores y músicos, 
+                no es clara sobre su aplicación a:
+            </p>
+            <ul>
+                <li>Streamers y YouTubers.</li>
+                <li>Artistas de NFTs y arte generativo.</li>
+                <li>Desarrolladores de videojuegos 'indie'.</li>
+            </ul>
+            <p>
+                Estos perfiles sufren la misma intermitencia y 
+                precariedad que un artista "tradicional", pero 
+                su inclusión en la "definición de artista" 
+                es el gran debate del siglo XXI.
+            </p>
+            
+        </section>
+        
+        <br>
+
+        <section>
+
+            <blockquote>
+                <p>
+                    "El Estatuto del Artista es una deuda histórica 
+                    con un sector que ha vivido en la precariedad 
+                    demasiado tiempo. Es una cuestión de dignidad laboral."
+                </p>
+                <cite>
+                    — Declaraciones de la Unión de Actores y Actrices
+                </cite>
+            </blockquote>
+
+            <br>
+
+            <center>
+            <a href="https://www.uniondeactores.com/"
+                target="_blank" rel="noopener noreferrer">
+                <img                      
+                    src="https://www.uniondeactores.com/images/recursos/logo-bueno-web.png"
+                    alt="Logo Unión de Actores y Actrices" 
+                    width="300">
+            </a></center>
+        </section>
+
+        <br>
+
+        <footer>
+            <p>Etiquetas: #politica #cultura #estatutoartista 
+                #nacional #creadoresdigitales</p>
+        </footer>
+
+        </article>
+    </main>
+    <br>
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <h3>Cultura Web Hoy</h3>
+            <p>"Lee la actualidad desde una perspectiva diferente."</p>
+        </div>
+        <table width="100%">
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="../nacional/home-page-nacional.html">Nacional</a></li>
+                        <li><a href="../internacional/home-page-internacional.html">Internacional</a></li>
+                        <li><a href="../deportes/home-page-deportes.html">Deportes</a></li>
+                        <li><a href="../Ocio/home-page-ocio.html">Ocio</a></li>
+                        <li><a href="../formacion/home-page-formacion.html">Formación</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="/sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="/formulario-opinion.html">Queremos saber tu opinión</a></li>
+                        <li><a href="../../contacto.html">Contacto</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <center><small>&copy; 2025 CULTURA WEB HOY. Todos los derechos reservados.</small></center>
+    </footer>
+</body>
+</html>

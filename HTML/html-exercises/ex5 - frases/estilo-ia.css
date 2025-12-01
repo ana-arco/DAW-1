@@ -1,0 +1,121 @@
+estilo-a.css
+
+@charset "utf-8";
+
+/* 1. VARIABLES CSS 
+   Esto nos permite cambiar los colores en un solo lugar. 
+   Es una práctica de desarrollador Senior. */
+:root {
+    --bg-color: #fdfbf7;      /* Color crema suave (papel) */
+    --text-color: #2c3e50;    /* Gris oscuro, mejor que negro puro */
+    --card-bg: #ffffff;       /* Blanco para las tarjetas */
+    --accent-color: #e67e22;  /* Naranja para detalles */
+    
+    /* Colores por categoría (Pasteles para que no molesten) */
+    --color-infancia: #3498db;   /* Azul */
+    --color-animales: #27ae60;   /* Verde */
+    --color-literatura: #9b59b6; /* Morado */
+    --color-numeros: #e74c3c;    /* Rojo */
+}
+
+/* 2. RESET BÁSICO Y TIPOGRAFÍA GENERAL */
+* {
+    box-sizing: border-box; /* Fundamental para calcular anchos correctamente */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna para UI */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* 3. CONTENEDOR PRINCIPAL 
+   Centramos el contenido y limitamos el ancho para que no se estire demasiado */
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 40px 20px;
+}
+
+/* 4. ENCABEZADOS */
+h1 {
+    font-family: 'Merriweather', serif; /* Fuente clásica para títulos */
+    font-size: 3rem; /* Grande e impactante (aprox 48px) */
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block; /* Para que el borde se ajuste al texto */
+    padding-bottom: 10px;
+    /* Truco para centrar el bloque del subtítulo */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 5. DISEÑO DE LAS TARJETAS (Los párrafos) */
+p {
+    background-color: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra sutil y elegante */
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem; /* ~18px, muy legible */
+    font-style: italic;
+    border-left: 6px solid #ccc; /* Borde izquierdo por defecto */
+    transition: transform 0.2s ease; /* Animación suave al pasar el mouse */
+}
+
+/* Efecto Hover: Cuando pasas el ratón, la tarjeta se levanta */
+p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* 6. ESTILOS ESPECÍFICOS POR CATEGORÍA 
+   Usamos las clases que ya tenías, pero en lugar de cambiar la fuente,
+   cambiamos el color del borde izquierdo. ¡Mucho más elegante! */
+
+p.infancia {
+    border-left-color: var(--color-infancia);
+}
+
+p.animales {
+    border-left-color: var(--color-animales);
+}
+
+p.literatura {
+    border-left-color: var(--color-literatura);
+}
+
+p.numeros {
+    border-left-color: var(--color-numeros);
+}
+
+/* Añadimos una etiqueta visual antes del texto usando pseudo-elementos (Avanzado) */
+p.infancia::before { content: "👶 Infancia: "; font-weight: bold; font-style: normal; color: var(--color-infancia); }
+p.animales::before { content: "🐾 Animales: "; font-weight: bold; font-style: normal; color: var(--color-animales); }
+p.literatura::before { content: "📚 Literatura: "; font-weight: bold; font-style: normal; color: var(--color-literatura); }
+p.numeros::before { content: "🔢 Números: "; font-weight: bold; font-style: normal; color: var(--color-numeros); }
+
+/* 7. FOOTER */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #95a5a6;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
