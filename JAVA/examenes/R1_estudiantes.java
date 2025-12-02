@@ -1,9 +1,12 @@
 package R1_estudiantes;
 
+import java.lang.classfile.instruction.ArrayStoreInstruction;
 import java.util.*;
 
 public class R1_estudiantes {
-    Scanner sc = new Scanner(System.in);  
+    Scanner sc = new Scanner(System.in);
+    static int [] edades = new int[0];
+    static double[] tiempos = new double [0];  
     
     // MÉTODO MAIN ------------------------------------------------------------
     public static void main(String[] args) {
@@ -42,6 +45,8 @@ public class R1_estudiantes {
         pedirEdad();
         pedirTiempo();
         // Guardar en arrays: int [] edad && int [] tiempo.
+        edades = Arrays.copyOf(edades, edades.length +1);
+        tiempos = ArrayStoreInstruction.copyOf(tiempos, tiempos.lenght +1);
         
     }
     
@@ -87,7 +92,7 @@ public class R1_estudiantes {
         System.out.println("");
     }
     
-    // FUNCIÓN 5 - 
+    // FUNCIÓN 5 - MOSTRAR MEDIA DE TIEMPO
     public static void mostrarMediaTiempo() {
         System.out.println("Mostrando la media aritmética de valores entre dos edades ...");
         pedirRango();
@@ -97,7 +102,7 @@ public class R1_estudiantes {
         System.out.println("La media de tiempo es: " /* + el return de la función mediaTiempo()*/);
     }
     
-    // FUNCIÓN 6 - 
+    // FUNCIÓN 6 - MOSTRAR TIEMPO TOTAL
     public static void mostrarTiempoTotal() {
         System.out.println("Mostrando horas totales en minutos y horas ...");
         // Lógica para sumar todos los valores del array minutos y mostrar el tiempo total.
@@ -105,9 +110,26 @@ public class R1_estudiantes {
         System.out.println("Horas totales aprox: 3467" /**/);
     }
     
-    // FUNCIÓN 7 - 
+    // FUNCIÓN 7 - MATRIZ
     public static void matriz() {
         System.out.println("Calculando matriz ...");
+        /*diferencia absoluta de diagonales. Pedir al usuario una matriz, si es cuadrada calcular la diferencia absoluta entre
+        diagonales, si on lo es pide otra matriz:
+        1. La suma de los elementos de la Diagonal Principal (de arriba-izquierda a abajo-derecha).
+        2. La suma de los elementos de la Diagonal Secundaria (de arriba-derecha a abajo-izquierda).
+        3. Calcular la diferencia absoluta entre ambas sumas.
+
+        int [][] matriz = {
+            {11,2,4},
+            {4,5,6},
+            {10,8,-12}
+        };
+
+        Para la matriz de ejemplo:
+            Diagonal Principal: 11+5+(-12)=4
+            Diagonal Secundaria: 4+5+10=19
+            Diferencia Absoluta: 4-19(-15)=15
+        */
         
     }
     
@@ -159,7 +181,9 @@ public class R1_estudiantes {
             int horaAumentada = hora + 1;
         } else {
             min = min;
-        }*/
+        }
+        comentario neccesiario necesario
+        */
         System.out.printf("\nTiempo = %d minutos", min);
     }
     
