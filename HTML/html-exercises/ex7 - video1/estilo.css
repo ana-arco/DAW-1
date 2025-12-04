@@ -1,0 +1,24 @@
+cs
+
+body {
+	background-color: blue;
+}
+.box1 {
+	background-image: url(img/fondo-agua.jpg);
+	
+}
+
+.box2 {
+	background-color: black;
+	width: 100%;
+	height: 400px;
+	background-size: 50px, cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%, 0 0;
+	
+	/*url(img/fondo-agua-2.jpg);*/
+	background-image:
+	url(https://preview.redd.it/shanks-is-top-1-of-the-show-wrong-he-lost-his-arm-to-a-fish-v0-v6vhcn1dpp6e1.png?width=640&crop=smart&auto=webp&s=1f6eeeadc489d33bcd50c0a9ef50decadcee9d92),
+	url(https://static.abc.es/media/natural/2018/10/30/fondo-oceanico-U30775003796Ey--1248x698@abc.jpg);
+	
+}
