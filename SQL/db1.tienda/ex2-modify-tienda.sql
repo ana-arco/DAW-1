@@ -1,10 +1,18 @@
-/* Añadir a la tabla STOCK*/
+/* ----------------------------------------------------------------- tabla STOCK*/
 
-/* En la tabla PRODUCTO*/
+/*una columna tipo fecha llamada FechaaUltimaEntrada y que tome por defecto el valor de la fecha actual. */
+ALTER TABLE stock ADD ultFecha DATE;
+ALTER TABLE stock MODIFY ultFecha DATE DEFAULT (CURRENT_DATE);
 
-/* En la tabla FAMILIA*/
+/*una columna llamada 'beneficio' contendrá el porcentaje de beneficio. El valor que almacena debe ser 1, 2, 3, 4 o 5.*/
+ALTER TABLE stock ADD beneficio numeric(1) CONSTRAINT sto_ben_chk check (beneficio >=1 and beneficio <= 5);
 
-/* En la tabla TIENDA*/
+/* ---------------------------------------------------------------- tabla PRODUCTO*/
+ALTER TABLE producto producto DROP COLUMN descripcion;
+
+/* ---------------------------------------------------------------- tabla FAMILIA*/
+
+/* ---------------------------------------------------------------- tabla TIENDA*/
 
 /*
 A)  Modificar las tablas creadas en el ejercicio anterior siguiendo las indicaciones. Los ejercicios se incluirán en un script llamado ModificaTienda.sql. Cada uno de ellos, como en el ejercicio anterior, irá precedido de un comentario con el enunciado.

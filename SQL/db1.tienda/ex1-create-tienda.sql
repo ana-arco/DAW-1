@@ -1,4 +1,3 @@
-/*Crear la base de datos*/
 create database tienda;
 
 use tienda;
