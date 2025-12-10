@@ -2,15 +2,15 @@ create database academia;
 use academia;
 
 create table profesor(
-	nombre varchar(255),
-    apellido_1_profesor varchar(255),
-    apellido_2_profesor varchar(255),
+	nombre_profesor varchar(255),
+    apellido1_profesor varchar(255),
+    apellido2_profesor varchar(255),
     nif_profesor varchar(255),
     direccion varchar(255),
     titulacion varchar(255),
     salario decimal(10,2) not null,
     constraint pro_nif_pk primary key(nif_profesor),
-    constraint pro_nom_ap1_ap2_uni unique(nombre, apellido_1_profesor, apellido_2_profesor)
+    constraint pro_nom_ap1_ap2_uni unique(nombre_profesor, apellido_1_profesor, apellido_2_profesor)
 );
 
 create table curso (
@@ -39,10 +39,6 @@ create table alumno(
     constraint alu_nif_pk primary key(nif_alumno),
     constraint alu_cod_fk foreign key(codigo_curso) references curso (codigo_curso)    
 );
-
-
-
-
 
 
 
