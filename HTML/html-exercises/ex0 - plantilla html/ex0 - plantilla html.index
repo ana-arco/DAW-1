@@ -12,8 +12,8 @@
   <body>
   
 	<header>
-		<h1>Ejercicio 7 - Fondo y Gradientes</h1>
-		<p>hay que terminar el video ok? A partir del minuto 14, gracias.</p> 
+		<h1>Ejercicio 0 - Temario</h1>
+		<p>Apuntes</p> 
 		
 	</header>
 	
@@ -58,9 +58,9 @@
 	</main>
 	
     <footer>
-		 <p>Ejercicio p - Imagen de fondo y gradientes (Video 1) <p/>
-		 <p>por Ana Arco - 1º DAW 2025/26<p/> 
-	 </footer>
+	 <p>Ejercicio p - Imagen de fondo y gradientes (Video 1) <p/>
+	 <p>por Ana Arco - 1º DAW 2025/26<p/>
+	</footer>
 	
   </body>
 </html>
