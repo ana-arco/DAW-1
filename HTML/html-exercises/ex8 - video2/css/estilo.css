@@ -1,0 +1,85 @@
+
+
+/* descargadas*/
+
+@font-face {
+	font-family: "Font 1";
+	src: url("../fonts/HomemadeApple-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Font 2";
+	src: url("../fonts/Aladin-Regular.ttf");
+}
+
+/* fonts importadas */
+
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+body {
+	background-color:white;
+}
+
+.box1 {
+	margin:10px;
+	padding: 10px;
+	
+	background-color: lightgreen;
+	border: black solid 2px;
+}
+
+.box2 {
+	margin:10px;
+	padding: 10px;
+	
+	background-color: lightpink;
+	border: black solid 2px;
+	
+	
+}
+
+.box2 h3 {
+	color: #50394c;
+	font-family: "Changa One";
+	font-size: 50px;
+
+}
+
+.intro {
+	text-align: center;
+	font-family: monospace, sans-serif;
+	font-size:15px;
+}
+
+.latin {
+	font-family: "Homemade Apple";
+	font-style: italic;
+	text-align: center;
+	color: brown;
+	font-size: 25px;
+}
+
+.espanol {
+	font-family: "font 2";
+	font-size: 25px;
+}

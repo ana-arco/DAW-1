@@ -2,11 +2,20 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Ejercicio 8 - Tipografías</title>
     
-    <link rel="stylesheet" type="text/css" href="estilo.css" title="Color" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" title="Color">
 	<link rel="icon" href="../favicon/favicon_ana.jpg" type="image/x-icon">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Homemade+Apple&display=swap" rel="stylesheet">
+	
   </head>
 
   <body>
@@ -18,23 +27,61 @@
 	</header>
 	
 	<main>
+		<div class="box2">
+			<h2>BOX 2</h2>
+			<h3>Citas de Virgilio</h3>
+
+				<p class="intro"><strong>Publio Virgilio Marón</strong> (70 a.C. - 19 a.C.) fue un poeta romano. Sus principales obras fueron <cite>la Eneida</cite>, <cite>las Bucólicas</cite> y <cite>las Geórgicas</cite>. Algunos de sus versos se  han convertido en citas célebres.</p>
+
+				<p class="latin">Ab Iove principium.</p>
+				<p class="espanol">Empieza por lo importante.</p>
+
+				<p class="latin">Felix qui potuit rerum cognoscere causas.</p>
+				<p class="espanol">Dichoso aquel que puede conocer las causas de las cosas.</p>
+
+				<p class="latin">Mens agitat molem.</p>
+				<p class="espanol">La mente mueve la materia.</p>
+
+				<p class="latin">Nimium ne crede colori.</p>
+				<p class="espanol">No confíes mucho en los colores.</p>
+
+				<p class="latin">Possunt quia posse videntur.</p>
+				<p class="espanol">Pueden los que creen que pueden.</p>
+
+				<p class="latin">Forsan et haec olim meminisse iuvabit.</p>
+				<p class="espanol">Quizás algún día recordemos esto con júbilo.</p>
+		</div>
+		
+		
+		
+		</div>
 		<div class="apuntes">
 			<h3>Repositorio de fuentes:</h3> 
 				<ul>
 					<li> <a href="https://fonts.google.com/">google fonts (fantasía)</a></li>
 					<li><a href="https://www.dafont.com/es/">https://www.dafont.com/es/</a></li>
 				</ul> 
+			<fieldset>
+				<legend>Forma 1</legend>
+				<p>@font-face {</p>
+				<p>   font-family: "Fuente 1";</p>
+				<p>   src: url("fonts/Ribeye-marrow");</p>
+				<p>}</p>
+			</fieldset>
 			
-			<p>@font-face {</p>
-			<p>   font-family: "Lobster";</p>
-			<p>   src: "Ribeye-marrow";</p>
-			<p>}</p>
+			<fieldset>
+				<legend>Forma 2</legend>
+				<p>@font-face {</p>
+				<p>   font-family: "Fuente 2";</p>
+				<p>   src: url("fonts/Ribeye-marrow");</p>
+				<p>}</p>
+			</fieldset>
 			
-			<p>Tenemos que hacer los tres tipos de fuentes:</p>
+			<h3>Tenemos que hacer los tres tipos de fuentes:</h3>
 				<ul>
-					<li>Enlazada</li>
-					<li>Importada o descargada</li>
-					<li>Normal</li>
+					<li>Enlazada con -link > o @import </li>
+					<li>Importada o descargada (download o clicando en "get font" y poner la ruta de donde esté guardada)</li>
+					<li>Normal - una que use el sistema (verdana, times new roman,...).</li>
 				</ul>
 		</div>
 		
@@ -45,18 +92,18 @@
 			<p>Este es un pequeño párrafo de texto donde escribiré algunas palabras.</p>
 			<p>Este es otro pequeño párrafo de texto donde escribiré algunas palabras.</p>
 
+			<h3>Algunas propiedades vistas en el video.</h3>
 			<ol>
-				<h3>Algunas propiedades vistas en el video.</h3>
 				<li>background: lightblue;</li>
 				<li>border: 2px solid #000;</li>
 				<li>padding: 15px;</li>
 				<li>font-family:Arial, Verdana, Tahoma, serif;</li>
 				<li>font-size: 18px;</li>
 				<li>text-align:center;</li>
-				<li></li>
 			</ol>
+			
+			<h3>Algunas otras propiedades vistas en el video.</h3>
 			<ol>
-				<h3>Algunas otras propiedades vistas en el video.</h3>
 				<li>text-decoration:underline;</li>
 				<li>text-shadow: 0 0 20px #FFF;</li>
 				<li>text-shadow: -4 0 20px RGBA(225, 255, 255, 1);</li>
@@ -70,39 +117,23 @@
 				<li>font-style:italic;</li>
 				<li>font-variant: samall-caps;</li>
 				<li>font: normal normal 400 22px/120% Arial, sans-serif;</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
 			</ol>
-		</div>
-	
-		
-		<div class="box2">
-			<h2>BOX 2</h2>
-			<h3>Ahora creamos otro div llamado box 2</h2>
-			<p>Vamos a poner la luna encima de un fondo.</p>
-			<p>Hay que poner primero una foto de fondo, una coma y luego la luna, en mi caso un pescao.</p>
-			<ol>
-				<li>background-image: url(.png),url(.jpg);</li>
-				<li>background-size:100px, cover;</li>
-				<li>background-repeat:no-repeat;</li>
-				<li>background-position: 50%, 20px, 0 0;</li>
-				<li>Es mejor ponerlo todo seguido:</li>
-				<li>50% 10px / 100px no-repeat url(.png), 0 0 / cover no-repeat url(.jpg);</li>
-				
-			</ol>
-		</div>
-		
-		<div class="">
 		</div>
 		
 	</main>
 	
     <footer>
-	 <p>Ejercicio 8 - Ejercicio 8 - Tipografías (Video 2) <p/>
-	 <p>Por Ana Arco - 1º DAW 2025/26<p/>
+	<br>
+	<hr>
+	 <p>Ejercicio 8 - Tipografías (Video 2) </p>
+	 <p>Por Ana Arco - 1º DAW 2025/26</p>
+	 
+	 <p>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+		</a>
+	</p>
+	<a href="https://github.com/ana-arco/DAW-1">Ejercicio 8 - Tipografías</a> © 2025 by <a href="https://example.com">Ana  A.I.</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 	</footer>
 	
   </body>
