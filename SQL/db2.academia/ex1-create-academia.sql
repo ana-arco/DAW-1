@@ -10,7 +10,7 @@ create table profesor(
     titulacion varchar(255),
     salario decimal(10,2) not null,
     constraint pro_nif_pk primary key(nif_profesor),
-    constraint pro_nom_ap1_ap2_uni unique(nombre_profesor, apellido_1_profesor, apellido_2_profesor)
+    constraint pro_nom_ap1_ap2_uni unique(nombre_profesor, apellido1_profesor, apellido2_profesor)
 );
 
 create table curso (

@@ -5,7 +5,7 @@ ALTER TABLE profesor RENAME COLUMN apellido_1_profesor to apellido1_profesor;
 ALTER TABLE profesor RENAME COLUMN apellido_2_profesor to apellido2_profesor;
 
 /*1. Crea un nuevo atributo llamado Edad de tipo numérico a la tabla ALUMNOS.*/
-alter table alumno add edad numeric (3); -- ejemplo 1
+alter table alumnoedadedad add edad numeric (3); -- ejemplo 1
 alter table alumno add edad decimal(3,0); -- ejemplo 2
 
 /*Añade las siguientes restricciones:*/
@@ -27,13 +27,13 @@ ALTER TABLE profesor DROP COLUMN direccion;
 /*7. Cambia la clave primaria de la tabla PROFESORES por Nombre y Apellidos.*/
 alter table curso drop constraint cur_nif_fk;
 alter table profesor drop primary key;
-alter table profesor add constraint pro_nif_pk primary key (nombre_profesor, apellido_1_profesor, apellido_2_profesor);
+alter table profesor add constraint pro_naa_pk primary key (nombre_profesor, apellido1_profesor, apellido2_profesor);
 
 /*8. Renombra la tabla PROFESORES por TUTORES.*/
-rename table profesores to tutores;
+rename table profesor to tutor;
 
 /*9. Elimina la tabla ALUMNOS.*/
-drop table alumnos;
+drop table alumno;
 
 /*10. Crea un usuario con tu nombre y clave BD02 y dale todos los privilegios sobre la tabla CURSOS.*/
 
