@@ -11,6 +11,12 @@ La inicialización se hace con el constructor.
 2. Atributos (ámbito global, se pueden usar en cualquier método)
 3. Métodos.
 
+En la clase CuentaCorrientE SOBRECARGAR los constructores para poder crear objetos.
+
+Con el DNI del titular de la cuenta y un saldo inicial
+Con el DNI, nombre y saldo inicial
+Escribir un programa que compruebe el funcionamiento de los métodos
+
 
 */
 
