@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designSystem>
+
+    <collection id="natural" name="Natural Tech">
+        <description>Ingeniería biológica. Precisión técnica fusionada con tonos musgo y piedra.</description>
+        
+        <group type="colors" title="Paleta Cromática">
+            <item>
+                <name>Moss Green</name>
+                <value>#4D7C0F</value>
+                <meta>var(--color-brand)</meta>
+            </item>
+            <item>
+                <name>Stone Base</name>
+                <value>#F5F5F4</value>
+                <meta>Background</meta>
+            </item>
+        </group>
+
+        <group type="typography" title="Tipografía Corporativa">
+            <item>
+                <name>Display</name>
+                <value>Space Grotesk</value>
+                <meta>Bold / Headers</meta>
+                <sample>Natural Systems</sample>
+            </item>
+            <item>
+                <name>Body</name>
+                <value>Inter</value>
+                <meta>Regular / UI</meta>
+                <sample>La funcionalidad guía la forma.</sample>
+            </item>
+        </group>
+
+        <group type="buttons" title="Botones">
+            <item>
+                <name>Primary Button</name>
+                <value>btn-primary</value>
+                <meta>Radius: 8px</meta>
+                <sample>Confirmar</sample>
+            </item>
+        </group>
+    </collection>
+
+
+    <collection id="organic" name="Organic Modernism">
+        <description>Artesanía digital. Formas fluidas, tonos tierra y tipografía editorial.</description>
+        
+        <group type="colors" title="Paleta Cromática">
+            <item>
+                <name>Terracota Clay</name>
+                <value>#A67C52</value>
+                <meta>var(--color-brand)</meta>
+            </item>
+            <item>
+                <name>Linen White</name>
+                <value>#FDFCF8</value>
+                <meta>Background</meta>
+            </item>
+        </group>
+
+        <group type="typography" title="Tipografía Editorial">
+            <item>
+                <name>Display</name>
+                <value>Playfair Display</value>
+                <meta>Italic / Titles</meta>
+                <sample>Timeless Elegance</sample>
+            </item>
+            <item>
+                <name>Body</name>
+                <value>Inter</value>
+                <meta>Light / Reading</meta>
+                <sample>El espacio negativo es el protagonista.</sample>
+            </item>
+        </group>
+
+         <group type="buttons" title="Botones">
+            <item>
+                <name>Primary Button</name>
+                <value>btn-primary</value>
+                <meta>Radius: 24px</meta>
+                <sample>Descubrir</sample>
+            </item>
+        </group>
+    </collection>
+
+
+    <collection id="cyberpunk" name="Cyberpunk Neon">
+        <description>Futuro distópico. Alto contraste, neones saturados sobre negro absoluto y estética hacker.</description>
+        
+        <group type="colors" title="Paleta Cromática">
+            <item>
+                <name>Neon Cyan</name>
+                <value>#00F3FF</value>
+                <meta>var(--color-brand)</meta>
+            </item>
+            <item>
+                <name>Void Black</name>
+                <value>#050505</value>
+                <meta>Background</meta>
+            </item>
+             <item>
+                <name>Laser Pink</name>
+                <value>#FF00FF</value>
+                <meta>Accent</meta>
+            </item>
+        </group>
+
+        <group type="typography" title="Tipografía Hacker">
+            <item>
+                <name>Display</name>
+                <value>Fira Code</value>
+                <meta>Monospace / Terminal</meta>
+                <sample>&lt;SYSTEM_OVERRIDE&gt;</sample>
+            </item>
+            <item>
+                <name>Body</name>
+                <value>Fira Code</value>
+                <meta>Light / Code</meta>
+                <sample>console.log("Wake up, Neo");</sample>
+            </item>
+        </group>
+
+         <group type="buttons" title="Botones">
+            <item>
+                <name>Glitch Button</name>
+                <value>btn-primary</value>
+                <meta>Border: 2px Solid</meta>
+                <sample>EXECUTE</sample>
+            </item>
+        </group>
+    </collection>
+
+</designSystem>

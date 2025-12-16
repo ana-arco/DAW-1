@@ -1,0 +1,59 @@
+/* css/variables.css */
+
+/* 1. GLOBALES */
+:root {
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+    --font-code: 'Fira Code', monospace;
+}
+
+/* 2. NATURAL TECH (Default) 🌿 */
+:root, [data-theme="natural"] {
+    --bg-body: #F5F5F4;
+    --bg-surface: #FFFFFF;
+    --text-main: #1C1917;
+    --text-muted: #57534E;
+    --color-brand: #4D7C0F;
+    --color-brand-hover: #365314;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --radius-card: 8px;
+    --border-width: 1px;
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. ORGANIC MODERNISM 🏺 */
+[data-theme="organic"] {
+    --bg-body: #FDFCF8;
+    --bg-surface: #F2EFE9;
+    --text-main: #43302B;
+    --text-muted: #8E7F7A;
+    --color-brand: #A67C52;
+    --color-brand-hover: #8B5E3C;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --radius-card: 24px;
+    --border-width: 0px;
+    --shadow-soft: 10px 10px 30px rgba(166, 124, 82, 0.1);
+}
+
+/* 4. CYBERPUNK NEON 🤖 */
+[data-theme="cyberpunk"] {
+    --bg-body: #050505;       /* Negro absoluto */
+    --bg-surface: #111111;    /* Gris muy oscuro */
+    --text-main: #E0E0E0;     /* Blanco sucio */
+    --text-muted: #00F3FF;    /* Cyan para textos secundarios */
+    
+    --color-brand: #FF00FF;   /* Magenta Laser */
+    --color-brand-hover: #D900D9;
+    
+    --font-display: 'Fira Code', monospace; /* Todo es código */
+    --font-body: 'Fira Code', monospace;
+    
+    --radius-card: 0px;       /* Bordes afilados */
+    --border-width: 2px;      /* Bordes gruesos */
+    --shadow-soft: 4px 4px 0px #00F3FF; /* Sombra dura Cyan (estilo Glitch) */
+}

@@ -1,0 +1,301 @@
+/* ==========================================================================
+   ARCHIVOS CSS PRINCIPAL - LND DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza el cambio de tema */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+/* 2. LAYOUT PRINCIPAL */
+.app-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr; /* Sidebar fija | Contenido flexible */
+    min-height: 100vh;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    padding: var(--space-xl);
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* 3. SIDEBAR (NAVEGACIÓN) */
+.sidebar {
+    background-color: var(--bg-surface);
+    border-right: 1px solid rgba(0,0,0,0.1); /* Borde sutil */
+    padding: var(--space-md);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Marca / Logo */
+.brand {
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-xs);
+}
+
+.brand h1 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.brand .subtitle {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    /* CAMBIO SOLICITADO: Ahora usamos el gris del sistema */
+    color: var(--text-muted); 
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    display: block;
+}
+
+/* Menú */
+.menu {
+    list-style: none;
+}
+
+.menu-category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-weight: 700;
+    padding-left: var(--space-xs);
+}
+
+.menu a {
+    display: block;
+    padding: 0.5rem var(--space-xs);
+    color: var(--text-main);
+    font-size: 0.9rem;
+    border-radius: var(--radius-card);
+    opacity: 0.8;
+}
+
+.menu a:hover, .menu a.active {
+    opacity: 1;
+    color: var(--color-brand); /* Se ilumina con el color del tema actual */
+    background-color: rgba(0,0,0,0.03);
+    font-weight: 500;
+}
+
+/* 4. SELECTOR DE AMBIENTES (Aquí estaba el fallo de los puntos) */
+.ambience-selector {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px dashed var(--text-muted);
+    opacity: 0.8;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 1rem;
+    padding-left: var(--space-xs);
+}
+
+.theme-btn {
+    width: 24px;  /* Tamaño del botón */
+    height: 24px;
+    border-radius: 50%; /* Círculo */
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.2);
+}
+
+.theme-btn.active {
+    border-color: var(--text-main);
+    box-shadow: 0 0 0 2px var(--bg-body); /* Anillo de separación */
+}
+
+/* Colores fijos para los botones */
+.btn-natural { background-color: #4D7C0F; }
+.btn-organic { background-color: #A67C52; }
+
+
+/* 5. HEADER Y TÍTULOS */
+.top-bar {
+    padding: var(--space-xl) var(--space-xl) 0 var(--space-xl);
+}
+
+.top-bar h2 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin-bottom: var(--space-xs);
+    color: var(--text-main);
+}
+
+.breadcrumbs {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.section {
+    margin-bottom: var(--space-xl);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-main);
+}
+
+.section-desc {
+    color: var(--text-muted);
+    margin-bottom: var(--space-md);
+    max-width: 60ch;
+}
+
+
+/* 6. GRID SYSTEM */
+.grid-container {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+
+/* 7. TARJETAS (COMPONENTES) */
+.card {
+    background: var(--bg-surface);
+    border: var(--border-width) solid rgba(0,0,0,0.1); /* Usa la variable de borde del tema */
+    border-radius: var(--radius-card); /* Usa el redondeo del tema */
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Tarjeta de Color */
+.color-swatch {
+    height: 140px;
+    width: 100%;
+}
+
+.card-info {
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.card-info .hex {
+    font-family: var(--font-code);
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.card-info code {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: rgba(0,0,0,0.05);
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    white-space: pre-wrap;
+}
+
+/* Tarjeta de Tipografía (Arreglada) */
+.type-card {
+    grid-column: span 1; /* Ocupa 1 columna por defecto */
+}
+
+.type-preview {
+    padding: var(--space-md);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    color: var(--text-main);
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.meta-data {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: var(--font-code);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+/* 8. FOOTER */
+.app-footer {
+    margin-top: auto;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: var(--bg-surface);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.author-name {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.version-tag {
+    background-color: rgba(0,0,0,0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    margin-left: 8px;
+}
