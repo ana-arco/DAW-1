@@ -55,9 +55,16 @@ public class A04_DiaSiguiente {
         
         
         // --- 2. ENTRADA DE DATOS DEL USUARIO ---
+        System.out.println(" - APLICACIÓN PARA CALCULAR EL DÍA SIGUIENTE - ");
+        System.out.println(" ");
         System.out.print("Introduce el día: ");
         day = sc.nextInt();
-            
+        /*    if (day < 0 && day > 31) {
+                System.out.println("Fecha 'día' guardada con éxito.");
+            } else {
+                System.out.println("ERROR: Fecha no válida.");
+            }
+         */    
         System.out.print("Introduce el número del mes: ");
         month = sc.nextInt();
             
@@ -75,22 +82,37 @@ public class A04_DiaSiguiente {
 
         // --- 4. COMPRUEBA LÓGICA DÍA SIGUIENTE ---
 
+        // creación de variables necesarias para ejecutar la lógica
         int nextDay = day;
         int nextMonth = month;
         int nextYear = year;
 
+        // PRIMERA CONDICIÓN -> si día es igual a día del mes entra en este bloque de código, si no cumple la condición sigue a la siguiente condición.
         if (day == diasDelMes) {
+            // iguala el día siguiente a 1
             nextDay = 1;
+            // le suma 1 a la variable siguiente mes (nextMonth)
             nextMonth = month + 1;
 
+            // SEGUNDA CONDICÓN -> si el siguiente mes es mayor al número 12 entra en este bloque if
             if (nextMonth > 12 ) {
-            nextMonth = 1;
-            nextYear = year + 1;
+
+                // iguala el mes siguiente a 1
+                nextMonth = 1;
+                // le suma 1 a la variable año siguiente
+                nextYear = year + 1;
             }
 
+        // si no cumple ninguna condición    
         } else {
+            // suma 1 a la variable día siguiente.     
             nextDay = day + 1; 
-        }
-        System.out.printf("\nEl día siguiente de %d/%d/%d es %d/%d/%d.", day, month, year, nextDay, nextMonth, nextYear);
+            }
+        System.out.printf("\nEl día siguiente de %d/%d/%d es %d/%d/%d.\n", day, month, year, nextDay, nextMonth, nextYear);
+        System.out.println(" ");
+
+        /* falta poner seguridad y validaciones, no puede existir un número negativo en ningún lugar, ninguna variable debe ser negativa, ni tampoco debería
+        pasarse del número de días */
+        
     }
 }

@@ -15,7 +15,7 @@ public class A03_Frutero {
         final double precioPeras = 1.95;
         
         //solicita kilos del primer semestre de manzanas y lo guarda en un double.
-        System.out.print("Introduce cuánto kilos de manzanas vendiste el primer semestre del año: ");
+        System.out.print("Introduce cuántos kilos de manzanas vendiste el primer semestre del año: ");
         double kgmanzanas1 = sc.nextDouble();
 
         //solicita kilos del segundo semestre y lo guarda
@@ -35,7 +35,7 @@ public class A03_Frutero {
 
         //mismo procedimiento pero con peras, copiar y pegar cambiando los nombres "manzana" a "peras".
         
-        System.out.print("Introduce cuánto kilos de peras vendiste el primer semestre del año: ");
+        System.out.print("Introduce cuántos kilos de peras vendiste el primer semestre del año: ");
         double kgperas1 = sc.nextDouble();
         System.out.print("¿Y el segundo semestre?: ");
         double kgperas2 = sc.nextDouble();

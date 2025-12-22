@@ -20,7 +20,7 @@ public class A01_PedirMostrar {
         System.out.printf("Tu nombre y apellidos son: %s %s.\n", nombre, apellidos);
         
         //solicita edad, guarda un número entero en la variable tipo int llamada "edad" y comprueba mostrando por consola. 
-        System.out.println("Ahora introduce tu edad: ");
+        System.out.print("Ahora introduce tu edad: ");
         int edad = sc.nextInt();
         System.out.printf("Tu edad es %d", edad);
 

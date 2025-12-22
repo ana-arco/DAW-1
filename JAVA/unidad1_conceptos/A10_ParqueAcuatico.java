@@ -21,6 +21,9 @@ public class A10_ParqueAcuatico {
         double importeTotal = (precioInfantiles*entradasInfantiles)+(precioAdultos*entradasAdultos);
         System.out.printf("Ha seleccionado %d entradas infantiles y %d entradas adulto por el importe de %.2f euros.\n", entradasInfantiles, entradasAdultos, (precioInfantiles*entradasInfantiles)+(precioAdultos*entradasAdultos));
 
+        // mediante un condicional dónde importeTotal sea mayor o igual a 100 se haga el cálculo ->
+        // ?   opción 1 -> descuento se iguala a importeTotal multiplicado por 5 y dividido entre 100.
+        // ? : opción 2 -> descuento se iguala a 0. 
         double descuento = importeTotal >= 100 ? importeTotal*5/100 : 0;
         double importeFinal = importeTotal - descuento;
 
@@ -28,6 +31,5 @@ public class A10_ParqueAcuatico {
 
         //boolean descuentoBoolean = importeTotal >= 100;
         //System.out.printf("¡Enhorabuena! Al ser un importe total superior a 100€ tiene un descuento del 5%, se le descuentan %.2f euros, el importe final sería %.2f euros.", );
-
     }
 }
