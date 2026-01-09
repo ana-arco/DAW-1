@@ -1,14 +1,11 @@
 package unidad3_bucles;
 
+import java.util.Scanner;
+
 /*Pedir diez números enteros por teclado y mostrar la media. */
 
-public class A05_For_MediaNumeros {
-    
-}
-
-
 // solución dada
-public class Main {
+public class A05_For_MediaNumeros {
 
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);

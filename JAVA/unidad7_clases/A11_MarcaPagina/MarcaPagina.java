@@ -1,4 +1,4 @@
-package unidad7_clases.11_MarcaPagina;
+
 
 /*
 Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un libro. Deberá disponer de métodos para:

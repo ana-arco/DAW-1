@@ -1,6 +1,5 @@
-package R1_estudiantes;
 
-import java.lang.classfile.instruction.ArrayStoreInstruction;
+
 import java.util.*;
 
 public class R1_estudiantes {
@@ -46,7 +45,7 @@ public class R1_estudiantes {
         pedirTiempo();
         // Guardar en arrays: int [] edad && int [] tiempo.
         edades = Arrays.copyOf(edades, edades.length +1);
-        tiempos = ArrayStoreInstruction.copyOf(tiempos, tiempos.lenght +1);
+        tiempos = Arrays.copyOf(tiempos, tiempos.length +1);
         
     }
     

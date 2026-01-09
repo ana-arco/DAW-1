@@ -110,7 +110,7 @@ saldo actualizado? ¿Se asigna este valor de vuelta a la variable saldo en el ma
 disponible?
 ● Claridad y legibilidad del código.*/
 
-package unidad4.1_examenes;
+
 
 public class cajeroATM {
     

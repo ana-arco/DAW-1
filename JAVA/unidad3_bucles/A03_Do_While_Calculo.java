@@ -1,16 +1,16 @@
 package unidad3_bucles;
 
+import java.util.Scanner;
+
 /* Desarrollar un juego que ayude a mejorar el cálculo mental de la suma. 
 El jugador tendrá que introducir la solución de la suma de dos números aleatorios comprendidos entre 1 y 100. 
 Mientras la solución introducida sea correcta, el juego continuará. En caso contrario, el programa terminará y 
 mostrará el número de operaciones realizadas correctamente. */
 
-public class A03_Do_While_Calculo {
-    
-}
+
 
 // solución dada
-public class Pruebasclase {
+public class A03_Do_While_Calculo {
 
     public static void main(String[] args) {
         int operando1, operando2;
