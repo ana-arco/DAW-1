@@ -14,7 +14,7 @@ public class MarcaPagina {
     
 
     // Atributos
-    public String titulo;
+    public String titulo; // es mejor no ponerle titulo para poder usar este marcapaginas en cualquier libro
     public int paginasTotales;
     private int paginaActual;
     private String lector;
@@ -27,6 +27,11 @@ public class MarcaPagina {
         this.lector = lector;
         this.paginaActual = 0; // Comienza desde el principio
     }
+
+    // Getter y Setters
+    /* Por cada atributo debería haber un get y un set.
+    
+    */
 
     // Métodos
 

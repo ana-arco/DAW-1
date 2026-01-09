@@ -1,3 +1,5 @@
+package unidad7_clases.A01_CuentaCorriente.Solución;
+
 class CuentaCorriente {
    String dni; 
    String nombre; 
