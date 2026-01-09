@@ -1,4 +1,4 @@
-package solucion;
+package unidad7_clases.A10_SmartLight.solucion;
 
 public class Main {
     public static void main(String[] args) {

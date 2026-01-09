@@ -1,15 +1,13 @@
 package unidad3_bucles;
 
+import java.util.Scanner;
+
 /* Diseñar un programa que muestre, para cada número introducido por teclado, si es par, si es positivo y su cuadrado. 
 El proceso se repetirá hasta que el número introducido sea cero. */
 
-public class A01_While_PositivoCuadrado {
-    
-}
-
 
 // solución dada
-public class Main {
+public class A01_While_PositivoCuadrado {
 
 
     public static void main(String[] args) {

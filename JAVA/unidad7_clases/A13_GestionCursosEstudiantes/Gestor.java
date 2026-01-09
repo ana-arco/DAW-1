@@ -18,6 +18,6 @@ package unidad7_clases.A13_GestionCursosEstudiantes;
 
 public class Gestor {
     public String nombre;
-    private final String telefono;
+    private final String Telefono = "";
     double importe;
 }

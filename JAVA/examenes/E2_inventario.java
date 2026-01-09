@@ -1,7 +1,7 @@
-package unidad6_simulacro;
 
 
-public class inventario {
+
+public class E2_inventario {
     /* Se declara:
         - Constante capacidad máxima.
         - Los 3 arrays static con el tamaño constante.

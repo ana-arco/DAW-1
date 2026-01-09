@@ -6,7 +6,7 @@
 
 - Para comenzar desde el principio una nueva lectura del mismo libro. */
 
-package JAVA.unidad7_clases.06_MarcaPágina;
+
 
 public class MarcaPagina {
     

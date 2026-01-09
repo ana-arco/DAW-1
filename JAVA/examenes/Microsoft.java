@@ -1,4 +1,3 @@
-package unidad6_simulacro1;
 
 import java.util.Scanner;
 
