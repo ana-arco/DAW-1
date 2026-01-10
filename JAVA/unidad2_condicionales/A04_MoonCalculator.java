@@ -37,7 +37,7 @@ public class A04_MoonCalculator {
         month = sc.nextInt();
 
         // validación inmediata del mes
-        if (day < 1 && day > 12) {
+        if (month < 1 || month > 12) {
             System.out.println("ERROR: El mes debe ser un número entre 1 y 12");
             System.out.println("Saliendo del sistema...");
             sc.close();
@@ -65,7 +65,7 @@ public class A04_MoonCalculator {
 
         System.out.print("\n3. Introduce el año: ");
         year = sc.nextInt();
-        if (year < 0 || year > 3000) {
+        if (year < 0 && year > 3000) {
             System.out.println("ERROR: el año está fuera del rango de registros.");
             System.out.println("Saliendo del sistema...");
             sc.close();
