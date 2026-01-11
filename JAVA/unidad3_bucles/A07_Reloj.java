@@ -1,4 +1,5 @@
 package unidad3_bucles;
+/*
 
 /* Actividad de Aula 7 - Reloj. Requisitos de finalización.
 Escribe un programa que incremente la hora de un reloj. Se pide por teclado la hora, 
@@ -58,7 +59,7 @@ Segundos: 98707 % 60 = 7. Los nuevos segundos son 07.
 
 Conclusión Final: 03:25:07. Tu programa lo ha calculado a la perfección. El resultado es absolutamente correcto. */
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class A07_Reloj {
 
@@ -75,6 +76,8 @@ public class A07_Reloj {
             seg = sc.nextInt();
             if (seg < 0 || seg > 59) {
                 System.out.println("Error: los segundos deben estar entre 0 y 59.");
+            } else{
+                break;
             }
         } while (true);
 
@@ -84,6 +87,8 @@ public class A07_Reloj {
             min = sc.nextInt();
             if (min < 0 || min > 59) {
                 System.out.println("Error: los minutos deben estar entre 0 y 59.");
+            } else {
+                break;
             }
         } while (true);
         
@@ -101,7 +106,7 @@ public class A07_Reloj {
         // se calculan cuántos segundos son las horas, los minutos y sumamos los segundos totales.
         // se sume el incremento para dar la siguiente hora.
         // se pasan todos los segundos a h:m:s
-        int segundosTotales = ((hora * 60 * 60) + (min * 60) + seg);
+        /*        int segundosTotales = ((hora * 60 * 60) + (min * 60) + seg);
         int segundosIncrementados = segundosTotales + incremento;
 
         // hh es igual a segundos entre 3.600 segundos que tiene una hora, y el resto se tiene que dividir entre 24 horas que tiene un día.

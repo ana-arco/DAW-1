@@ -16,6 +16,7 @@ import java.util.Scanner;
  * @author Ana Arco
  */
 
+
 public class A03_Concierto {
     /**
      * Método principal que ejecuta el programa.
@@ -23,6 +24,7 @@ public class A03_Concierto {
      *
      * @param args Argumentos de la línea de comandos (no se utilizan en este programa).
      */
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         //Crea una clase de tipo Scanner llamada sc para poder usarla cada vez que queramos guardar valores introducidos por consola.
         Scanner sc = new Scanner(System.in);
