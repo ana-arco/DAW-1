@@ -30,6 +30,6 @@ public class A02_LongitudArea {
         
         //muestra valores en metros, no en centímetros.
         System.out.printf("\nEn metros se vería así: Longitud = %.2f metros. Área = %.2f metros.", longitud/100, area/100);
-
+        sc.close();
     }
 }
