@@ -16,12 +16,15 @@ public class A01_While_PositivoCuadrado {
         int num = sc.nextInt(); 
         
         while (num != 0){
+            
             //Comprobación de si es par o impar
             if (num%2 == 0)System.out.println("Es par");
             else System.out.println("Es impar");
+            
             //Comprobar si es positivo
             if (num > 0) System.out.println("Es positivo");
             else System.out.println("Es negativo");
+            
             //Realizar el cuadrado
             System.out.println("El cuadrado de "+num+" es "+num*num);
             System.out.print("Introduzca número: ");

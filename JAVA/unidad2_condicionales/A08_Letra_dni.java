@@ -14,6 +14,7 @@ Observa que un número de 8 dígitos está dentro del rango del tipo int.
 
     */
 public class A08_Letra_dni {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int numeroDNI;

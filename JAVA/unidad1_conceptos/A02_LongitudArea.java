@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class A02_LongitudArea {
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         //crea una variable de tipo escaner para llamarla en cualquier momento del main.
         Scanner sc = new Scanner(System.in);

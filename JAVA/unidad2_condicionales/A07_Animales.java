@@ -19,13 +19,15 @@ Nota: Evitar que la aplicación realice divisiones por cero. */
  * críticos (como la división por cero) si la plantilla de músicos es 0.
  */
 
-/* ADAPTACIÓN. Cambié el tema del ejercicio para hacerlo como una Gestión de Recursos para una orquesta, que sería sueldo por músico, en vez de comida Diaria.
-Recurso total: comida -> presupuesto/subvención
-Población: Población -> Músicos Orquesta
-Necesidad individual: kilos -> sueldo por músico 
-*/
+    /* ADAPTACIÓN. Cambié el tema del ejercicio para hacerlo como una Gestión de Recursos para una orquesta, que sería sueldo por músico, en vez de comida Diaria.
+    Recurso total: comida -> presupuesto/subvención
+    Población: Población -> Músicos Orquesta
+    Necesidad individual: kilos -> sueldo por músico 
+    */
 
+//package unidad2_condicionales;
 package unidad2_condicionales;
+
 import java.util.Scanner;
 
 public class A07_Animales {
@@ -50,7 +52,7 @@ public class A07_Animales {
 
         if (presupuestoDisponible < 0 ) {
             System.out.println("Error: el presupuesto debe ser en números positivos.");
-            System.out.println("Se cancela la gestión... ");
+            System.out.println("Se cancela la gestión. ");
             System.out.println("Saliendo del sistema...");
             sc.close();
             return;
@@ -83,7 +85,6 @@ public class A07_Animales {
         }
 
         // 2. CÁLCULO DE VIABILIDAD
-
         // ¿Cuánto dinero necesitamos realmente para pagar lo que piden?
         double presupuestoNecesario = numMusicos * cacheMusico;
 
@@ -109,11 +110,8 @@ public class A07_Animales {
             System.out.printf("\nEl pago máximo viable por músico será: %.2f euros (Solicitado: %.2f)\n", nuevoCacheReal, cacheMusico);
             System.out.println(" ");
             System.out.println("Gracias por consultarnos.");
+            System.out.println(" ");
 
-        }
-
-        
-
-        
+        }                
     }
 }
