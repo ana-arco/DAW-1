@@ -25,5 +25,31 @@ crear un array para los días del mes
 */
 
 public class Main {
-    
+    public static void main(String[] args) {
+        System.out.println("--- PRUEBA 1: Crear fecha correcta ---");
+        Calendario fecha1 = new Calendario(2023, 12, 31);
+        fecha1.mostrar();
+
+        System.out.println("\n--- PRUEBA 2: Incrementar día (cambio de año)");
+        fecha1.incrementarDia();
+        fecha1.mostrar();
+
+        System.out.println("\n--- PRUEBA 3: Control de mes (31 Enero -> Febrero) ---");
+        // fuerza la fecha al 31 enero
+        fecha1.setMonth(1);
+        fecha1.setDay(31);
+        fecha1.mostrar();
+
+        System.out.println("\n--- PRUEBA 4: Setters con validación ---");
+        System.out.println("Intentando poner día 50...");
+        fecha1.setDay(50); // debería dar error de consola
+        fecha1.mostrar(); // la fecha no debería cambiar
+
+        System.out.println("\n--- PRUEBA 5: Año 0 ---");
+        Calendario fechaHistorica = new Calendario(-1, 12, 31);
+        fechaHistorica.mostrar();
+        System.out.println("Incrementamos año (del -1 debería pasar al 1):");
+        fechaHistorica.incrementarAño(1);
+        fechaHistorica.mostrar(); // Debería ser 1/12/31
+    }
 }
