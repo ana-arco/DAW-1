@@ -8,7 +8,7 @@
 
 ·      Mostrar información: muestra la información disponible de la cuenta corriente. */
 
-package JAVA.unidad7_clases.CuentaCorriente;
+package unidad7_clases.A01_CuentaCorriente;
 
 
 

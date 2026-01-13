@@ -17,7 +17,52 @@ package unidad7_clases.A13_GestionCursosEstudiantes;
 */
 
 public class Gestor {
-    public String nombre;
-    private final String telefono;
-    double importe;
+
+    // 1. ATRIBUTOS
+    
+    // "El nombre será público"
+    public String nombre; 
+    
+    // "No podrá cambiar su número de teléfono" -> final
+    // "Todo el mundo podrá consultarlo" -> private con Getter público
+    private final String telefono; 
+    
+    // "Solo será visible por clases vecinas" -> (package-private / default)
+    // No ponemos ni public ni private
+    double importeMaximo; 
+
+    // 2. CONSTRUCTORES
+    
+    /**
+     * Constructor principal.
+     * Si no se asigna importe, será 10.000 por defecto.
+     */
+    public Gestor(String nombre, String telefono) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.importeMaximo = 10000.0; // Valor por defecto
+    }
+
+    /**
+     * Constructor opcional por si queremos especificar el importe al crear.
+     */
+    public Gestor(String nombre, String telefono, double importeMaximo) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.importeMaximo = importeMaximo;
+    }
+
+    // 3. MÉTODOS
+    
+    // Getter para el teléfono (para que "todo el mundo pueda consultarlo")
+    public String getTelefono() {
+        return telefono;
+    }
+    
+    // No hacemos Setter para teléfono porque es 'final'
+    
+    // Getter para importe (opcional, pero útil si la clase vecina necesita leerlo)
+    double getImporteMaximo() {
+        return importeMaximo;
+    }
 }

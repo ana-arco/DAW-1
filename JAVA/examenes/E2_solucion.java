@@ -1,7 +1,5 @@
 
 
-package examenes;
-
 import java.util.*;
 
 public class E2_solucion {

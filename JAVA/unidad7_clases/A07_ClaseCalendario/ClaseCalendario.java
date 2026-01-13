@@ -16,7 +16,7 @@ Por simplicidad, solo tendremos en consideración que existen meses con distinto
 
  */
 
-package JAVA.unidad7_clases.07_ClaseCalendario;
+
 
 public class ClaseCalendario {
     

@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class A02_LongitudArea {
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         //crea una variable de tipo escaner para llamarla en cualquier momento del main.
         Scanner sc = new Scanner(System.in);
@@ -30,6 +31,6 @@ public class A02_LongitudArea {
         
         //muestra valores en metros, no en centímetros.
         System.out.printf("\nEn metros se vería así: Longitud = %.2f metros. Área = %.2f metros.", longitud/100, area/100);
-
+        sc.close();
     }
 }

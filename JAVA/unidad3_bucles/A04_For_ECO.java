@@ -1,22 +1,16 @@
 package unidad3_bucles;
 
+import java.util.Scanner;
+
 /*Implementa la aplicación ECO, que pide al usuario un número y muestra en pantalla la salida:
 ECO
 ECO
 ECO
 Se muestra ECO tantas veces como el número introducido por teclado. La salida anterior sería para el número 3 */
 
-public class A04_For_ECO {
-    
-}
-
-
-
-
-
 
 // solución dada
-public class Main {
+public class A04_For_ECO {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

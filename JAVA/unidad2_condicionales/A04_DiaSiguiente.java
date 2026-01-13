@@ -50,26 +50,43 @@ public class A04_DiaSiguiente {
         
         // --- 1. PREPARACIÓN DE RECURSOS Y VARIABLES ---
         Scanner sc = new Scanner(System.in);
+        
         int day, month, year;
         int diasDelMes; // Esta variable es clave para el contador.
         
         
         // --- 2. ENTRADA DE DATOS DEL USUARIO ---
-        System.out.println(" - APLICACIÓN PARA CALCULAR EL DÍA SIGUIENTE - ");
+        System.out.println(" - APLICACIÓN PARA CALCULAR EL DÍA EXACTO DE LA SIGUIENTE LUNA LLENA - ");
         System.out.println(" ");
         System.out.print("Introduce el día: ");
         day = sc.nextInt();
-        /*    if (day < 0 && day > 31) {
-                System.out.println("Fecha 'día' guardada con éxito.");
+            if (day > 0 && day < 32) {
+                System.out.println("¡Día guardado con éxito.!");
             } else {
-                System.out.println("ERROR: Fecha no válida.");
+                System.out.println("ERROR: Fecha no válida. El día debe ser entre 1 y 31.");
+                return;
             }
-         */    
+           
         System.out.print("Introduce el número del mes: ");
         month = sc.nextInt();
+            if (month > 0 && month < 12) {
+                System.out.println("¡Mes guardado con éxito!");
+            } else {
+                System.out.println("ERROR: Fecha no válida. El año sólo tiene 12 meses.");
+                return;
+            }
             
         System.out.print("Introduce el año: ");
         year = sc.nextInt();
+        // podría poner una función para validar y no repetir este bucle
+        // también podría omitir las 3 validaciones y sustituirla por una sola, aunque me gusta ir línea a línea.
+
+        if (year > 0 && year < 5000) {
+                System.out.println("Año guardado con éxito!");
+            } else {
+                System.out.println("ERROR: Fecha no válida. El año está fuera del registro histórico.");
+                return;
+            }
         
 
         // --- 3. LÓGICA PARA DETERMINAR DÍAS DEL MES ---
@@ -79,6 +96,12 @@ public class A04_DiaSiguiente {
             case 4, 6, 9, 11 -> 30;
             default -> 31;
         };
+
+        // VALIDACIÓN EXTRA: ¿y si puso días que no pertenecen al mes?
+        if (day > diasDelMes) {
+            System.out.printf("\nERROR: El mes %d sólo tiene %d días.", month, diasDelMes);
+            return;
+        }
 
         // --- 4. COMPRUEBA LÓGICA DÍA SIGUIENTE ---
 
@@ -108,11 +131,9 @@ public class A04_DiaSiguiente {
             // suma 1 a la variable día siguiente.     
             nextDay = day + 1; 
             }
-        System.out.printf("\nEl día siguiente de %d/%d/%d es %d/%d/%d.\n", day, month, year, nextDay, nextMonth, nextYear);
+        System.out.printf("\nEl día anterior fue el %d/%d/%d, la fecha siguiente es el %d/%d/%d.\n", day, month, year, nextDay, nextMonth, nextYear);
         System.out.println(" ");
-
-        /* falta poner seguridad y validaciones, no puede existir un número negativo en ningún lugar, ninguna variable debe ser negativa, ni tampoco debería
-        pasarse del número de días */
+        
         
     }
 }
