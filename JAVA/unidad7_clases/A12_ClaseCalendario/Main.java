@@ -38,6 +38,7 @@ public class Main {
         // fuerza la fecha al 31 enero
         fecha1.setMonth(1);
         fecha1.setDay(31);
+        fecha1.incrementarMes();
         fecha1.mostrar();
 
         System.out.println("\n--- PRUEBA 4: Setters con validación ---");
