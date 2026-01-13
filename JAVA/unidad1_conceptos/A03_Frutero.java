@@ -3,6 +3,8 @@ Por este motivo, es necesario diseñar una aplicación que solicite las ventas (
 semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo 
 de manzanas está fijado en 2,35 € y el kilo de peras en 1,95 €.*/
 
+//package unidad1_conceptos;
+
 import java.util.Scanner;
 
 public class A03_Frutero {

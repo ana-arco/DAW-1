@@ -24,9 +24,10 @@ public class A01_GrupoAlumnos {
         double media;
 
         System.out.print("¿Cuántos alumnos hay? ");
-        
+        int n = sc.nextInt();
 
         // Pedir valores por teclado hasta llegar a la posición N
+        
         /*do {
             System.out.println("Introduce una nota: ");
             nota[n] = sc.nextInt();

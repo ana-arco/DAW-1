@@ -3,6 +3,8 @@ a calcular el importe que hay que cobrar en la taquilla por la compra de una ser
 número será introducido por el usuario). Existen dos tipos de entrada: infantiles (15,50€) y de adultos (20€). 
 En el caso de que el importe total sea igual o superior a 100€, se aplicará automáticamente un bono descuento del 5%.*/
 
+package unidad1_conceptos;
+
 import java.util.Scanner;
 
 public class A10_ParqueAcuatico {
@@ -12,14 +14,16 @@ public class A10_ParqueAcuatico {
         final double precioInfantiles = 15.50;
         final double precioAdultos = 20;
 
-        System.out.print("¿Cuántas entradas infantiles desea? ");
+        System.out.println("\n¡Bienvenido al parque acuático!");
+
+        System.out.print("\n¿Cuántas entradas infantiles desea? ");
         int entradasInfantiles = sc.nextInt();
 
         System.out.print("¿Cuántas entradas adultos desea? ");
         int entradasAdultos = sc.nextInt();
 
         double importeTotal = (precioInfantiles*entradasInfantiles)+(precioAdultos*entradasAdultos);
-        System.out.printf("Ha seleccionado %d entradas infantiles y %d entradas adulto por el importe de %.2f euros.\n", entradasInfantiles, entradasAdultos, (precioInfantiles*entradasInfantiles)+(precioAdultos*entradasAdultos));
+        System.out.printf("Ha seleccionado %d entradas infantiles por el precio de %.2f cada una. \nHa seleccionado %d entradas adulto por el precio de %.2f euros cada una. \nDando un importe total de %.2f euros.\n", entradasInfantiles, precioInfantiles, entradasAdultos, precioAdultos, (precioInfantiles*entradasInfantiles)+(precioAdultos*entradasAdultos));
 
         // mediante un condicional dónde importeTotal sea mayor o igual a 100 se haga el cálculo ->
         // ?   opción 1 -> descuento se iguala a importeTotal multiplicado por 5 y dividido entre 100.

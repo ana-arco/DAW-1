@@ -6,6 +6,8 @@ indistintamente de lo anterior, podremos salir a la calle: el hecho de que tenga
 si ha finalizado las tareas y si necesita ir a la biblioteca. El algoritmo debe mostrar mediante un booleano 
 (true o false) si es posible que se le otorgue permiso para ir a la calle. */
 
+// package unidad1_conceptos;
+
 import java.util.Scanner;
 
 public class A05_PuedoSalir {

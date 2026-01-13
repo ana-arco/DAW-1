@@ -1,4 +1,4 @@
-package unidad7_clases.A10_SmartLight.solucion;
+package solucion;
 
 public class Bombilla {
     // Atributos

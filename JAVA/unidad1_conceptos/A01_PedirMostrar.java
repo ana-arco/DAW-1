@@ -1,6 +1,6 @@
 /*Ejercicio 1.- Diseñar un programa que pida al usuario su nombre, apellidos y edad y lo muestre por consola.*/
 
-//package unidad1;
+// package unidad1_conceptos;
 
 import java.util.Scanner;
 

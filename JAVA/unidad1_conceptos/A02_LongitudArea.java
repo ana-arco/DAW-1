@@ -2,7 +2,7 @@
 el usuario debe introducir el radio (que puede contener decimales).
 Recordamos: Longitud = 2pi • Radio Área = pi. Radio^2*/
 
-//package unidad1;
+// package unidad1_conceptos;
 
 import java.util.Scanner;
 
