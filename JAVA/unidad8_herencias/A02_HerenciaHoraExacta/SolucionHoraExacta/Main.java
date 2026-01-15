@@ -2,7 +2,7 @@ package A02_HerenciaHoraExacta.SolucionHoraExacta;
 
 import java.util.Scanner;
 
-public class Resuelta0802 {
+public class Main {
 
     public static void main(String[] args) {
         HoraExacta r = new HoraExacta(11, 15, 23); 

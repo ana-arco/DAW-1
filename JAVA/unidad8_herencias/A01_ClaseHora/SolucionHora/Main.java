@@ -1,7 +1,6 @@
 package A01_ClaseHora.SolucionHora;
 
 import java.util.Scanner;
-import SolucionHora.Hora;
 
 public class Main {
 

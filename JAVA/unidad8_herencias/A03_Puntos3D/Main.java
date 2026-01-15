@@ -1,4 +1,4 @@
-package unidad8_herencias.A03_Puntos3D;
+package A03_Puntos3D;
 
 /*Define la clase Punto, que tiene como atributos las coordenadas x e y, de tipo entero, que lo sitúan en el plano. Además del constructor, implementa el método
 

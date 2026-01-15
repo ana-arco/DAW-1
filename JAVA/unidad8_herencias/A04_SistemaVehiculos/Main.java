@@ -1,4 +1,4 @@
-package unidad8_herencias.A04_SistemaVehiculos;
+package A04_SistemaVehiculos;
 
 /* Instrucciones:
 

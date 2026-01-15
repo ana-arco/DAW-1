@@ -1,4 +1,4 @@
-package unidad8_herencias.A01_ClaseHora;
+package A01_ClaseHora;
 
 /* Diseñar la clase Hora, que representa un instante de tiempo compuesto por la hora (de O a 23) y los minutos. 
 
@@ -28,9 +28,11 @@ public class A01_ClaseHora {
         if (m > 0 && m < 60) {
             
         }
+        return false;
     }
 
     public boolean setHora(){
+        return false;
 
     }
 
@@ -48,6 +50,7 @@ public class A01_ClaseHora {
 
     // Método para devolver un String con la representación de la hora.
     public String toString(){
+        return null;
 
     }
 

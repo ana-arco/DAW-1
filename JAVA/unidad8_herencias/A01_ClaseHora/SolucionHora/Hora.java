@@ -1,4 +1,4 @@
-package resuelta08.pkg02;
+package A01_ClaseHora.SolucionHora;
 
 public class Hora {
 

@@ -1,4 +1,4 @@
-package unidad8_herencias.A02_HerenciaHoraExacta;
+package A02_HerenciaHoraExacta;
 
 /* A partir de la clase Hora implementar la clase HoraExacta, que incluye en la hora los segundos. Además de los métodos heredados de Hora, dispondrá de:
 
