@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Fuente 1";
+	src: url(../fonts/just_another_hand.woff);
+}
+
+@font-face {
+	font-family: "Fuente repeat";
+	src: url(../fonts/just_another_hand.woff2);
+}
+
+@font-face {
+	font-family: "Fuente 2";
+	src: url(../fonts/lobster.woff);
+}
+
+@font-face {
+	font-family: "Fuente 3";
+	src: url(../fonts/ribeye_marrow.woff);
+}
+
+body {
+	background-color: pink;
+}
+
+h1 {
+	font-family: "Fuente repeat";
+}
