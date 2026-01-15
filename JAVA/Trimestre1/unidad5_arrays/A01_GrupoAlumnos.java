@@ -7,7 +7,7 @@ calcular la media, y encontrar la nota más alta y la más baja. Poner una clase
 4.
 */ 
 
-package unidad5_arrays;
+package trimestre1.unidad5_arrays;
 
 import java.util.Scanner;
 //import javax.print.attribute.standard.NumberOfDocuments;

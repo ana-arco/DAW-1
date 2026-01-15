@@ -1,3 +1,4 @@
+package unidad7_clases.A03_perro;
 /*
 Debes crear una clase llamada Perro con las siguientes características:
 
@@ -30,7 +31,7 @@ public class perro {
     // CONSTRUCTORES
     // CONSTRUCTOR 1 - constructor por defecto (sin parámetros)
     public perro() {
-        this("desconocido", "desconocida", "0", "desconocido");
+        this("desconocido", "desconocida", 0, "desconocido");
     }
 
     // CONSTRUCTOR 2 - constructor con nombre y raza
@@ -40,7 +41,7 @@ public class perro {
     }
 
     // CONSTRUCTOR 3 - constructor que reciba todos los atributos
-    public perro(String nombre, String raza, int edad, Sting color) {
+    public perro(String nombre, String raza, int edad, String color) {
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;

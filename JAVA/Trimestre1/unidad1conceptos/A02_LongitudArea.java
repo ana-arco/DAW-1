@@ -1,3 +1,5 @@
+package trimestre1.unidad1conceptos;
+
 /*Ejercicio 2.- Diseñar una aplicación que calcule la longitud y el área de una circunferencia. Para ello, 
 el usuario debe introducir el radio (que puede contener decimales).
 Recordamos: Longitud = 2pi • Radio Área = pi. Radio^2*/

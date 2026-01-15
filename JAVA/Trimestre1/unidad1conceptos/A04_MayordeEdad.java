@@ -1,7 +1,8 @@
+package trimestre1.unidad1conceptos;
+
 /* Realizar una aplicación que solicite al usuario su edad y le indique si es mayor de 
 edad (mediante un literal booleano: true o false). */
 
-package unidad1_conceptos;
 
 import java.util.Scanner;
 

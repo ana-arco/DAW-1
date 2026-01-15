@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /* Crea un programa en Java que genere un número aleatorio entre 1 y 100. 
 Luego, pide al usuario que adivine el número. El programa debe indicar si la suposición es demasiado alta, 

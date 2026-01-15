@@ -1,3 +1,5 @@
+package trimestre1.examenes;
+
 /* Descripción del Programa
 Crearás una aplicación de consola que simula las operaciones básicas de un cajero automático. El
 programa comenzará con un saldo inicial (por ejemplo, 1000 euros) y mostrará un menú con las

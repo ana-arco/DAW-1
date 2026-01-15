@@ -1,4 +1,4 @@
-package unidad4_funciones;
+package trimestre1.unidad4_funciones;
 
 /* Escribir una función a la que se le pasen dos enteros y muestre todos los números comprendidos entre ellos. */
 

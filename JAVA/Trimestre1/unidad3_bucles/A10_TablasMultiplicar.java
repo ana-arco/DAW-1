@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /* Actividad de Aula 10 - Bucles Independientes - Tablas de multiplicar
 Requisitos de finalización

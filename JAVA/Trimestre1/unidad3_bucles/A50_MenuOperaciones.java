@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /* Realiza un menú con las siguientes opciones:
 ----------------------------------------------------

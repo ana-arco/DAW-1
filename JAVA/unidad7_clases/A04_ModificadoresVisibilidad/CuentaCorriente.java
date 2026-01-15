@@ -1,4 +1,4 @@
-package 04_ModificadoresVisibilidad;
+package unidad7_clases.A04_ModificadoresVisibilidad;
 
 public class CuentaCorriente { // Clase pública: visible desde fuera
     

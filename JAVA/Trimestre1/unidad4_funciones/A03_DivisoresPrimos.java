@@ -9,7 +9,7 @@
  * 
  */
 
-package unidad4_funciones;
+package trimestre1.unidad4_funciones;
 
 public class A03_DivisoresPrimos {
     

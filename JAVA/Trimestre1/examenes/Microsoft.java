@@ -1,3 +1,5 @@
+package trimestre1.examenes;
+
 
 import java.util.Scanner;
 

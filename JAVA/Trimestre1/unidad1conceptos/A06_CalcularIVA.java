@@ -2,7 +2,7 @@
 debe solicitar la base imponible y el IVA que se debe aplicar. Muestra el importe correspondiente al IVA y 
 al total. */
 
-package unidad1_conceptos;
+package trimestre1.unidad1conceptos;
 
 import java.util.Scanner;
 

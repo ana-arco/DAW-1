@@ -1,4 +1,4 @@
-package unidad5_arrays;
+package trimestre1.unidad5_arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;

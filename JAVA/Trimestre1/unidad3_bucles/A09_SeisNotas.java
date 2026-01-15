@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /*Dadas 6 notas, escribir la cantidad de alumnos aprobados, condicionados (nota igual a cuatro) y suspensos */
 

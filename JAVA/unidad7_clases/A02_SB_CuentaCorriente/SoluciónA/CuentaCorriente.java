@@ -1,4 +1,6 @@
-class CuentaCorriente {
+package unidad7_clases.A02_SB_CuentaCorriente.SoluciónA;
+
+public class CuentaCorriente {
   String dni; 
    String nombre; 
    double saldo; 

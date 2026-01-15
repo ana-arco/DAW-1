@@ -1,4 +1,4 @@
-
+package unidad7_clases.A05_GetSetNombreBanco.Solución;
 public class Main {
 
 

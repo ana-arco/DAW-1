@@ -9,7 +9,7 @@ y la visibilidad de sus atributos para que:
 
 Realizar un programa para comprobar la visibilidad de los atributos. */
 
-package 04_ModificadoresVisibilidad;
+package unidad7_clases.A04_ModificadoresVisibilidad;
 
 public class ModificadoresVisibilidad {
     public static void main(String[] args) {

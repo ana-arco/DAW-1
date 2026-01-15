@@ -1,3 +1,5 @@
+package unidad7_clases.A03_perro.solución;
+
 // Clase Perro
 public class Perro {
     // Atributos de la clase

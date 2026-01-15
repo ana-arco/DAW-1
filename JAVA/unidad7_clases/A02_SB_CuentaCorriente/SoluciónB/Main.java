@@ -1,3 +1,5 @@
+package unidad7_clases.A02_SB_CuentaCorriente.SoluciónB;
+
 public class Main {
 
    public static void main(String[] args) {

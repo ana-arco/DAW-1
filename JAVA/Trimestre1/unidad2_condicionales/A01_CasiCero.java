@@ -3,7 +3,7 @@ casi-cero, que son aquellos, positivos o negativos, que se acercan a 0 por menos
 curiosamente el O no se considera un número casi-cero. Ejemplos de números casi-cero son el 0,3, el -0,99 
 o el 0,123; algunos números que no se consideran casi-ceros son: el 12,3, el 0 o el -1. */
 
-package unidad2_condicionales;
+package trimestre1.unidad2_condicionales;
 
 import java.util.Scanner;
 

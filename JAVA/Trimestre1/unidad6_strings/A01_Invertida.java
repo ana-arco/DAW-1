@@ -1,4 +1,4 @@
-package unidad6_strings;
+package trimestre1.unidad6_strings;
 
 public class A01_Invertida {
     public static void main(String[] args) {

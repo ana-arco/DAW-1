@@ -1,3 +1,5 @@
+package trimestre1.unidad1conceptos;
+
 /*Ejercicio 3.- Un frutero necesita calcular los beneficios anuales que obtiene de la venta de manzanas y peras. 
 Por este motivo, es necesario diseñar una aplicación que solicite las ventas (en kilos) de cada 
 semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo 

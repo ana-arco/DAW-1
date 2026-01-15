@@ -1,3 +1,4 @@
+package trimestre1.unidad1conceptos;
 /*Ejercicio 8.- Realiza un programa que nos pida la base y la altura de un triángulo y muestre por pantalla su área. */
 
 import java.util.Scanner;

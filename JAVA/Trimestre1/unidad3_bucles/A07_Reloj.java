@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 /*
 
 /* Actividad de Aula 7 - Reloj. Requisitos de finalización.

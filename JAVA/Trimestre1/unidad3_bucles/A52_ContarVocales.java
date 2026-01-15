@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /* Crea un programa en Java que le pida al usuario que ingrese una frase y luego cuente cuántas 
 vocales (a, e, i, o, u) hay en esa frase, ignorando las mayúsculas. */

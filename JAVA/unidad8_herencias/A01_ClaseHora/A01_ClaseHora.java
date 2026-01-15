@@ -1,4 +1,4 @@
-package A01_ClaseHora;
+package unidad8_herencias.A01_ClaseHora;
 
 /* Diseñar la clase Hora, que representa un instante de tiempo compuesto por la hora (de O a 23) y los minutos. 
 

@@ -1,5 +1,4 @@
-
-package solucion;
+package unidad7_clases.A10_SmartLight.solucion;
 
 public class TestSmartHome {
     public static void main(String[] args) {

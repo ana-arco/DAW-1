@@ -1,4 +1,4 @@
-package A01_ClaseHora.SolucionHora;
+package unidad8_herencias.A01_ClaseHora.SolucionHora;
 
 public class Hora {
 

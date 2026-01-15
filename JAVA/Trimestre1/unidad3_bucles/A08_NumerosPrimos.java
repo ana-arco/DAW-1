@@ -1,4 +1,4 @@
-package unidad3_bucles;
+package trimestre1.unidad3_bucles;
 
 /* Realiza un programa que nos pida un número n y que nos diga cuantos números primos hay entre 1 y n. Un número primo es aquel que solo es divisible por 1 y por el mismo. Veamos un ejemplo para n=8.
 

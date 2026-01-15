@@ -1,3 +1,4 @@
+package unidad7_clases.A06_MarcaPágina;
 /* Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un libro. Deberá disponer de métodos para:
 
 - Incrementar la página leída,

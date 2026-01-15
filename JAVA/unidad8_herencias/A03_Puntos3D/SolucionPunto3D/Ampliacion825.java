@@ -1,4 +1,4 @@
-package A03_Puntos3D.SolucionPunto3D;
+package unidad8_herencias.A03_Puntos3D.SolucionPunto3D;
 
 public class Ampliacion825 {
 

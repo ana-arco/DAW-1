@@ -1,4 +1,4 @@
-package A02_HerenciaHoraExacta.SolucionHoraExacta;
+package unidad8_herencias.A02_HerenciaHoraExacta.SolucionHoraExacta;
 
 public class HoraExacta extends Hora { 
     

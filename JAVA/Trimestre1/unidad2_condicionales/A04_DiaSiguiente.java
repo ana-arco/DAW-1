@@ -28,7 +28,7 @@ correspondiente al día siguiente. Febrero tiene 28 días.
 
 // 4. Mostrar la fecha del día siguiente.*/
 
-package unidad2_condicionales;
+package trimestre1.unidad2_condicionales;
 
 import java.util.Scanner;
 

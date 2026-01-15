@@ -1,3 +1,7 @@
+package trimestre1.unidad1conceptos;
+
+
+
 /*Ejercicio 1.- Diseñar un programa que pida al usuario su nombre, apellidos y edad y lo muestre por consola.*/
 
 // package unidad1_conceptos;
