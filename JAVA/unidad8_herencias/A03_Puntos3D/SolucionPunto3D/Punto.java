@@ -1,5 +1,5 @@
 
-package ampliacion825;
+package A03_Puntos3D.SolucionPunto3D;
 
 public class Punto {
     protected Integer x;

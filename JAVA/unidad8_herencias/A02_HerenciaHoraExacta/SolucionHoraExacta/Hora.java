@@ -1,4 +1,4 @@
-package resuelta08.pkg02;
+package A02_HerenciaHoraExacta.SolucionHoraExacta;
 
 public class Hora {
 

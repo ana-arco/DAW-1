@@ -1,4 +1,4 @@
-package ampliacion825;
+package A03_Puntos3D.SolucionPunto3D;
 
 public class Ampliacion825 {
 
@@ -9,6 +9,7 @@ public class Ampliacion825 {
         System.out.println("p2: " + p2);
         System.out.println("distancia entre p1 y p2: " + p1.distancia(p2));
         Punto aux = new Punto(40, 40);
+        System.out.println("Mi bb");
         System.out.println("Punto normal: " + aux);
     }
 
