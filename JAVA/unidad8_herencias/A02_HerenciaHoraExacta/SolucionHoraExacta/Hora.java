@@ -4,11 +4,13 @@ public class Hora {
 
     protected int hora, minutos; 
 
+    @SuppressWarnings("OverridableMethodCallInConstructor")
     public Hora(){
         setHora(0);
         setMinutos(0);
     }
 
+    @SuppressWarnings("OverridableMethodCallInConstructor")
     public Hora(int hora, int minutos) { 
         setHora(hora);
         setMinutos(minutos);

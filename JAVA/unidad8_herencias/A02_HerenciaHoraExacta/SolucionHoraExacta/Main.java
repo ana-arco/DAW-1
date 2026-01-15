@@ -13,11 +13,11 @@ public class Main {
         System.out.println(r);
         System.out.println("Escriba los segundos: ");
         int segundos = new Scanner(System.in).nextInt();
-        if (r.setSegundos(segundos)) {
+        /*if (r.setSegundos(segundos)) {
             System.out.println(r);
         } else {
             System.out.println("No es posible cambiar los segundos");
-        }
+        }*/
     }
 
 }
