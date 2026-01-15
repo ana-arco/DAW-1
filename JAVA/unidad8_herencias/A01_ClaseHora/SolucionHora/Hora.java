@@ -32,11 +32,14 @@ public class Hora {
         else this.minutos = 0;
     }
 
-    public void setHora(int hora) {
+    public boolean setHora(int hora) {
         if (0 <= hora && hora < 24) { 
             this.hora = hora;
-        }
-        else this.hora = 0;
+            return true;
+        } else {
+            this.hora = 0;
+            return false;
+        } 
     }
 
     @Override 

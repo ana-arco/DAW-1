@@ -1,10 +1,12 @@
-package resuelta08.pkg01;
+package A01_ClaseHora.SolucionHora;
 
 import java.util.Scanner;
+import SolucionHora.Hora;
 
-public class Resuelta0801 {
+public class Main {
 
     public static void main(String[] args) {
+        
         Hora r = new Hora(11, 30); //las 11:30
         System.out.println(r);
         for (int i = 1; i <= 61; i++) { //incrementamos 61 minutos
@@ -19,6 +21,7 @@ public class Resuelta0801 {
         } else {
             System.out.println("La hora no se pudo cambiar");
         }
+    
     }
 
 }
