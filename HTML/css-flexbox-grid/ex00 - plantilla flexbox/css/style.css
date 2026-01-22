@@ -1,0 +1,48 @@
+body {
+	background-color: #c83349;
+	color: white;
+	font: 24px Helvetica;
+}
+
+#main{
+	min-height: 800px;
+	margin: 0;
+	padding: 0;
+}
+
+#main article {
+	margin: 4px;
+	padding: 5px;
+	border: 10px solid #e06377;
+	border-radius:27pt;
+	background-color: #f9d5e5;
+}
+
+#main nav {
+	margin: 4px;
+	padding:5px;
+	border: 10px solid #e06377;
+	border-radius:27pt;
+	background-color: #f9d5e5;
+}
+
+#main aside {
+	margin: 4px;
+	padding:5px;
+	border: 10px solid #e06377;
+	border-radius:27pt;
+	background-color: #f9d5e5;
+}
+
+header, footer {
+	margin: 4px;
+	padding: 15px;
+	min-height: 100px;
+	border: 10px solid #e06377;
+	border-radius:27pt;
+	background-color: #eeac99;
+}
+
+@ media all and (max-width: 640px) {
+	
+}
