@@ -22,6 +22,7 @@ package unidad8_herencias.A08_Computers;
 
 public class Main {
     public static void main(String[] args) {
-        
+        Portatil aux1 = new Portatil("111", 23, 10.10);
+        System.out.println(aux1);
     }
 }

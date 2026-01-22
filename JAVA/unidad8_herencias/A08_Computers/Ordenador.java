@@ -9,16 +9,15 @@ public abstract class Ordenador {
 
     // MÉTODOS
         // constructores
-        // constructor por defecto sin nada
-        /* protected Ordenador() {
-            
-        }*/
+        // constructor por defecto
+        public Ordenador() {
+        }
         
         // constructor con todos los parámetros
         public Ordenador(String codigo, double precio) {
             this.codigo = codigo;
             this.precio = precio;
-            System.out.println("Este es el constructor de Ordenador con el código: " + codigo + " y precio de " + precio + " euros.");
+            System.out.println("Este es el constructor de Ordenador con el codigo: " + codigo + " y precio de " + precio + " euros.");
         }
         
         // getters y setters

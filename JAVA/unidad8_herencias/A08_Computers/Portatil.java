@@ -12,11 +12,13 @@ public class Portatil extends Ordenador {
 
         // constructor por defecto
         public Portatil() {
+            super("", 0.0);
             System.out.println("Este es el constructor por defecto.");
         }
+        
         // constructor con parámetros
         public Portatil(String codigo, double precio, double peso) {
-            super();
+            super(codigo, precio);
             this.peso = peso;
             System.out.println("Este es el constructor de Portatil con parámetros.");
 
