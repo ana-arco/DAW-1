@@ -1,4 +1,4 @@
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 import java.util.Scanner;
 
 /*
@@ -7,6 +7,7 @@ Calculadora de Próxima Luna Llena (Ciclo de 29 días).
 */
 
 public class A04_MoonCalculator {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int day, month, year, diasDelMes;

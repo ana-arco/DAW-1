@@ -1,5 +1,5 @@
 /* DNI - Crear un programa que solicite al usuario un número de DNI y muestre la letra correspondiente. */
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 import java.util.Scanner;
 
 /*la siguiente tabla:

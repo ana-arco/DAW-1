@@ -4,7 +4,7 @@ y el número de entradas vendidas. Hay que tener en cuenta que,
     Condición 1 -> Si el número de entradas vendidas no supera el 20% del aforo del local, se cancela el concierto. 
     Condición 2 -> Si el número de entradas vendidas no supera el 50% del aforo del local, se realiza una rebaja del 25% del precio de la entrada. */
 
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 
 import java.util.Scanner;
 

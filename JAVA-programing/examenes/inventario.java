@@ -1,4 +1,4 @@
-package trimestre1.examenes;
+package examenes;
 
 
 public class inventario {

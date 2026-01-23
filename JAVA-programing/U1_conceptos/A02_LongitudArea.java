@@ -1,4 +1,4 @@
-package trimestre1.unidad1conceptos;
+package U1_conceptos;
 
 /*Ejercicio 2.- Diseñar una aplicación que calcule la longitud y el área de una circunferencia. Para ello, 
 el usuario debe introducir el radio (que puede contener decimales).

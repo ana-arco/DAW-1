@@ -1,4 +1,4 @@
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 
 import java.util.Scanner;
 
@@ -22,6 +22,7 @@ public class A05_DiaSemana {
  *
  * @param args Argumentos de la línea de comandos (no se utilizan).
  */
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         // --- 1. INICIALIZACIÓN DE HERRAMIENTAS ---
         // Se crea un objeto Scanner para leer la entrada del teclado del usuario.

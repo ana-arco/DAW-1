@@ -1,4 +1,4 @@
-package trimestre1.unidad3_bucles;
+package U3_bucles;
 
 import java.util.Scanner;
 
@@ -43,26 +43,17 @@ public class A01_BubleSuperFacil {
             int option = sc.nextInt();
 
             switch (option) {
-            case 1 : 
-                System.out.printf("Sumamos %.3f + %.3f = %.3f", numA, numB, (numA + numB));
-                break;
-            
-            case 2 : 
-                System.out.printf("Restamos %.3f - %.3f = %.3f", numA, numB, (numA - numB));
-                break;
-            
-            case 3 : 
-                System.out.printf("Multiplicamos %.3f x %.3f = %.3f", numA, numB, (numA * numB));
-                break;
-            
-            case 4 : 
-                System.out.println("Saliendo del sistema...");
-                return;
-            
-            default : 
-                System.out.println("Error: opción no válida.");
-                System.out.println("Elige una opción posible:");
-                break;
+                case 1 -> System.out.printf("Sumamos %.3f + %.3f = %.3f", numA, numB, (numA + numB));
+                case 2 -> System.out.printf("Restamos %.3f - %.3f = %.3f", numA, numB, (numA - numB));
+                case 3 -> System.out.printf("Multiplicamos %.3f x %.3f = %.3f", numA, numB, (numA * numB));
+                case 4 -> {
+                    System.out.println("Saliendo del sistema...");
+                    return;
+                }
+                default -> {
+                    System.out.println("Error: opción no válida.");
+                    System.out.println("Elige una opción posible:");
+                }
             }
 
             System.out.println(" ");

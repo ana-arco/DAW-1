@@ -1,4 +1,4 @@
-package trimestre1.unidad3_bucles;
+package U3_bucles;
 
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ import java.util.Scanner;
  */
 
 public class A01_While_BancaOrquesta {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         

@@ -1,4 +1,4 @@
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 
 import java.util.Scanner;
 

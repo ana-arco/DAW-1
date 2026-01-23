@@ -3,7 +3,7 @@ a calcular el importe que hay que cobrar en la taquilla por la compra de una ser
 número será introducido por el usuario). Existen dos tipos de entrada: infantiles (15,50€) y de adultos (20€). 
 En el caso de que el importe total sea igual o superior a 100€, se aplicará automáticamente un bono descuento del 5%.*/
 
-package trimestre1.unidad1conceptos;
+package U1_conceptos;
 
 import java.util.Scanner;
 

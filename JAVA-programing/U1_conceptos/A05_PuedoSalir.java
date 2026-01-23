@@ -1,4 +1,4 @@
-package trimestre1.unidad1conceptos;
+package U1_conceptos;
 
 /*Ejercicio 5.- Diseñar un algoritmo que nos indique si podemos salir a la calle. Existen aspectos 
 que influirán en esta decisión: si está lloviendo y si hemos terminado nuestras tareas. Solo podremos 

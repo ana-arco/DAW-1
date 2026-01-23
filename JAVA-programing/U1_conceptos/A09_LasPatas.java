@@ -1,4 +1,4 @@
-package trimestre1.unidad1conceptos;
+package U1_conceptos;
 
 /*Ejercicio 9.- Un biólogo está realizando un estudio de distintas especies de invertebrados y necesita una aplicación
 que le ayude a contabilizar el número de patas que tienen en total todos los animales capturados durante una jornada de 

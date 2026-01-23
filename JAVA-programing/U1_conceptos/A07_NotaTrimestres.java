@@ -1,4 +1,4 @@
-package trimestre1.unidad1conceptos;
+package U1_conceptos;
 
 /*Ejercicio 7.- Escribir un programa que solicite las notas del primer, segundo y tercer trimestre (notas enteras 
 que se solicitarán al usuario). El programa debe mostrar la nota media del curso como se utiliza en el boletín de 

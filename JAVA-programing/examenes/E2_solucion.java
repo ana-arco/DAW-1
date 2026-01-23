@@ -1,4 +1,4 @@
-package trimestre1.examenes;
+package examenes;
 
 import java.util.*;
 
@@ -253,7 +253,7 @@ public class E2_solucion {
                 resultadoSumaFilas+=matriz[i][j];
             }
             if (resultadoSumaFilas != numeroMagico) {
-                sumaDeFilas=false;
+                sumaDeFilas = false;
             }
         }
         

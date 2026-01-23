@@ -1,4 +1,4 @@
-package trimestre1.examenes;
+package examenes;
 
 /* Descripción del Programa
 Crearás una aplicación de consola que simula las operaciones básicas de un cajero automático. El

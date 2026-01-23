@@ -26,7 +26,7 @@ Nota: Evitar que la aplicación realice divisiones por cero. */
     */
 
 //package unidad2_condicionales;
-package trimestre1.unidad2_condicionales;
+package U2_condicionales;
 
 import java.util.Scanner;
 
